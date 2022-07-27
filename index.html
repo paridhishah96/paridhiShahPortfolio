@@ -5,16 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paridhi Shah</title>
+    <script src="https://kit.fontawesome.com/319714ae3d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <header>
-        
+        <div class="headerNav" id="headerNav">
+            <nav>
+                <a href="#" id="logo">Logo - PS</a>
+                <div class="hamburgerMenu" id="hamburgerMenu"> 
+                    <ul>
+                        <li>
+                            <a href="#home">home</a>
+                        </li>
+                        <li>
+                            <a href="#about">about</a>
+                        </li>
+                        <li>
+                            <a href="#contact">contact</a>
+                        </li>
+                        <li>                    
+                            <a href="#projects">projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="heading">
+            <h1>paridhi shah</h1>
+            <p>front end web developer</p>
+        </div>
     </header>
     <main>
+        <section class="about" id="about">
+            <div class="wrapper">
+                <div class="imgContainer">
+                    <!-- <img src="" alt=""> IMAGE FROM PORTFOLIO-->
+                </div>
+                <div class="aboutInfo">
+                    <h2>about me</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsum ducimus quo, aliquid architecto modi officiis rem deserunt quas nostrum ex odio at necessitatibus hic? Optio, assumenda earum quaerat esse quod eum ipsum pariatur at deleniti laboriosam vel omnis perferendis, laudantium nisi libero? At facere laborum voluptatem maxime optio aliquid ex, autem eveniet recusandae. Aliquam, molestiae a. Cupiditate, ducimus obcaecati.</p>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="wrapper">
+                <div class="skillInfo">
+                    <h2>skills</h2>
+                    <p>my current teck stack</p>
+                </div>
+                <div class="skillList" id="skillList">
+
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="wrapper">
+                <div class="projectInfo">
+                    <h2>projects</h2>
+                    <p>current projects, the list grows, as do my skills</p>
+                </div>
+                <div class="projectList">
+
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="wrapper">
+                <div class="contactInfo">
+                    <h2>get in touch</h2>
+                    <p>contact me to discuss my projects or anything food! would love to know your fav cuisine and your comfort food</p>
+                    <div class="socialIcons">
+                        <a href="https://medium.com/@paridhishah96">
+                            <span class="sr-only">Link of my blogs on Medium</span>
+                            <i class="fa-brands fa-medium"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/paridhishah96/">
+                            <span class="sr-only">Link of my profile on LinkedIn</span>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/paridhishah96">
+                            <span class="sr-only">Link of my blogs on Medium</span>
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form action="#">
+                        <label for="name">name</label>
+                        <input type="text" id="name" required>
+
+                        <label for="email">email</label>
+                        <input type="emaail" id="email" required>
+
+                        <label for="message">message</label>
+                        <textarea id="message" cols="30" rows="10"></textarea>
+
+                        <button>submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
         
     </main>
     <footer>
-        
+        <p>Built by Paridhi Shah</p>
+        <p>Version 1.0</p>        
     </footer>
 </body>
 </html>
