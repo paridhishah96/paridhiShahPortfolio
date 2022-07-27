@@ -225,3 +225,125 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-weight: normal;
+}
+
+h1, h2, h3 h4 {
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+ul,
+li,
+a,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+body {
+  background-color: #0a192f;
+}
+body main {
+  height: 90vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body main p {
+  color: white;
+}
+body main p a {
+  text-decoration: underline;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+body main p a:hover {
+  color: #233554;
+  font-size: 1.15rem;
+}
+
+footer {
+  height: 10vh;
+  background-color: #112240;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+footer p {
+  color: white;
+}

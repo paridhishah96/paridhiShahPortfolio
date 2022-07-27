@@ -1,0 +1,21 @@
+body {
+    background-color: #0a192f;
+    main {
+        height: 90vh;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        p {
+            color: white;
+            a {
+                text-decoration: underline;
+                transition: 0.3s;
+                &:hover {
+                    color: #233554;
+                    font-size: 1.15rem;
+                }
+            }
+        }
+    }
+
+}

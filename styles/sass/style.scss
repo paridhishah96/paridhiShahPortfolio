@@ -1,6 +1,7 @@
-@import './partials/setup';
-// @import './partials/setup';
-// @import './partials/setup';
-// @import './partials/setup';
-// @import './partials/setup';
-// @import './partials/setup';
+// setup and base styles for common css on the project
+@import "./partials/setup";
+// @import "./partials/variables";
+@import "./partials/typography";
+@import "./partials/basestyles";
+@import './partials/main';
+@import './partials/footer';
