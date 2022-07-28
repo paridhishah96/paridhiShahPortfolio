@@ -1,0 +1,19 @@
+header {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background: url(../assets/headerImage.png),
+    url(../assets/headerBlob.svg);
+    background-position-y: center;
+    background-position-x: 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    h1 {
+        padding: 2rem 0;
+    }
+} 
+

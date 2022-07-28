@@ -6,37 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paridhi Shah</title>
     <script src="https://kit.fontawesome.com/319714ae3d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./styles/style.css">
-</head>
+    </head>
 <body>
-    <header>
-        <div class="headerNav" id="headerNav">
-            <nav>
-                <a href="#" id="logo">Logo - PS</a>
-                <div class="hamburgerMenu" id="hamburgerMenu"> 
-                    <ul>
-                        <li>
-                            <a href="#home">home</a>
-                        </li>
-                        <li>
-                            <a href="#about">about</a>
-                        </li>
-                        <li>
-                            <a href="#contact">contact</a>
-                        </li>
-                        <li>                    
-                            <a href="#projects">projects</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+    <!-- Skip Links -->
+    <a href="#mainContent" class="skip-link">Skip to main content.</a>
+
+    <nav class="headerNav" id="headerNav">
+        <a href="#" id="logo">Logo - PS</a>
+        <div class="hamburgerMenu" id="hamburgerMenu"> 
+            <ul>
+                <li>
+                    <a href="#home"><span class="srNumber">01.</span>home</a>
+                </li>
+                <li>
+                    <a href="#about"><span class="srNumber">02.</span>about</a>
+                </li>
+                <li>
+                    <a href="#contact"><span class="srNumber">03.</span>contact</a>
+                </li>
+                <li>                    
+                    <a href="#projects" class="last"><span class="srNumber">04.</span>projects</a>
+                </li>
+            </ul>
         </div>
-        <div class="heading">
-            <h1>paridhi shah</h1>
-            <p>front end web developer</p>
+    </nav>
+    <header>
+        <div class="heading">              
+            <div class="bgBlob"></div>
+            <div class="wrapper">
+                <h1>Paridhi Shah</h1>
+                <p>always on the web, building things for the web, learning from the web</p>
+            </div>
         </div>
     </header>
-    <main>
+    <main id="mainContent">
         <section class="about" id="about">
             <div class="wrapper">
                 <div class="imgContainer">
@@ -110,7 +117,8 @@
     </main>
     <footer>
         <p>Built by Paridhi Shah</p>
-        <p>Version 1.0</p>        
+        <p>Version 2.0</p>        
     </footer>
 </body>
 </html>
+<!-- colour palette inspiration from www.brittanychiang.com/ -->

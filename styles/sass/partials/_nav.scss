@@ -1,0 +1,25 @@
+.headerNav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+        display: flex;
+        li {
+            a {
+                padding: 1rem;
+                color: rgba($color: $white, $alpha: 0.8);
+                transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+                &:hover, &:focus {
+                    color: $accentThree;
+                    font-size: 1.05rem;
+                    outline: none;
+                }
+                span {
+                    padding: 0 .25rem 0 0;
+                    color: $accentTwo;
+                }
+            }
+        }
+    }
+}
