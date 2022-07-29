@@ -1,8 +1,27 @@
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-evenly;
-
+    font-family: $headings;
+    border-top: 1px solid $accentTwo;
+    .wrapper {
+        padding: .5rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-evenly;
+        .buildBy {
+            padding-bottom: 0.3rem;
+        }
+        .version {
+            font-size: 0.8rem;
+            color: $accentTwo;
+            a {
+                font-size: 0.6rem;
+                transition: color 0.3s ease-in  ;
+                &:hover, &:focus {
+                    font-size: 0.8rem;
+                    color: $accentThree;
+                }
+            }
+        }
+    }
 }

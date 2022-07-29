@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paridhi Shah</title>
     <script src="https://kit.fontawesome.com/319714ae3d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
@@ -26,10 +27,10 @@
                     <a href="#about"><span class="srNumber">02.</span>about</a>
                 </li>
                 <li>
-                    <a href="#contact"><span class="srNumber">03.</span>contact</a>
+                    <a href="#projects" class="last"><span class="srNumber">03.</span>projects</a>
                 </li>
-                <li>                    
-                    <a href="#projects" class="last"><span class="srNumber">04.</span>projects</a>
+                <li> 
+                    <a href="#contact"><span class="srNumber">04.</span>contact</a>
                 </li>
             </ul>
         </div>
@@ -38,8 +39,10 @@
         <div class="heading">              
             <div class="bgBlob"></div>
             <div class="wrapper">
+                <p class="intro">hi, my name is</p>
                 <h1>Paridhi Shah</h1>
-                <p>always on the web, building things for the web, learning from the web</p>
+                <p class="slogan">i'm always on the web, building things for the web, learning from the web</p>
+                <button class="knowMore" id="knowMore">know more</button>
             </div>
         </div>
     </header>
@@ -47,14 +50,15 @@
         <section class="about" id="about">
             <div class="wrapper">
                 <div class="imgContainer">
-                    <!-- <img src="" alt=""> IMAGE FROM PORTFOLIO-->
+                    <img src="https://placebear.com/275/275" alt="">
                 </div>
                 <div class="aboutInfo">
-                    <h2>about me</h2>
+                    <h2><span class="srNumber">02.</span>about me</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsum ducimus quo, aliquid architecto modi officiis rem deserunt quas nostrum ex odio at necessitatibus hic? Optio, assumenda earum quaerat esse quod eum ipsum pariatur at deleniti laboriosam vel omnis perferendis, laudantium nisi libero? At facere laborum voluptatem maxime optio aliquid ex, autem eveniet recusandae. Aliquam, molestiae a. Cupiditate, ducimus obcaecati.</p>
                 </div>
             </div>
         </section>
+
         <section class="skills" id="skills">
             <div class="wrapper">
                 <div class="skillInfo">
@@ -62,38 +66,129 @@
                     <p>my current teck stack</p>
                 </div>
                 <div class="skillList" id="skillList">
+                    <ul>
+                        <li>
+                            <i class="devicon-html5-plain-wordmark colored" aria-label="HTML5"></i>
+                        </li>
+                        <li>
+                            <i class="devicon-sass-original colored" aria-label="SASS"></i></i>
+                        </li>
 
+                    </ul>
+                    <!-- 
+                        HTML5, CSS, SCSS/SASS, JS/ES6, JQUERY, REST APIs/ AJAX, REACT, FIREBASE, GIT, Terminal, Resp Des, Accesibility, Paired programming, Proj Management, SQL, Python
+                     -->
                 </div>
             </div>
         </section>
+
         <section class="projects" id="projects">
             <div class="wrapper">
                 <div class="projectInfo">
-                    <h2>projects</h2>
+                    <h2><span class="srNumber">03.</span>projects</h2>
                     <p>current projects, the list grows, as do my skills</p>
                 </div>
                 <div class="projectList">
-
+                    <ul>
+                        <li>
+                            <div class="imgContainer">
+                                <img src="./assets/projectOneMockup.png" alt="A showcase of
+                                 what my PSD projects looks like on a laptop screen and a phone screen" class="markup">
+                                </div>
+                            <div class="contentContainer">
+                                <h3>Get creative✨</h3>
+                                <p class="subHeading">Your go-to aesthetic blog!</p>
+                                <p class="description">A multi-page responsive and accessible blog website. Creating a pixel-perfect design using the PSD provided along with some transitions and animations</p>
+                                <p class="madeWith"></p>
+                                <div class="skillIcons">
+                                    <!-- skills used for this project -->
+                                </div>
+                                <div class="projLinks">
+                                    <a href="https://project-one-paridhi-creative.netlify.app/" class="liveLink">Live Site</a>
+                                    <a href="https://github.com/paridhishah96/paridhiShahProjectOne" class="gitLink">GitHub Repo</a>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <div class="imgContainer">
+                                <img src="" alt="" class="markup">
+                            </div>
+                            <div class="contentContainer">
+                                <h3></h3>
+                                <p class="subHeading"></p>
+                                <p class="description"></p>
+                                <p class="madeWith"></p>
+                                <div class="skillIcons"> -->
+                                    <!-- skills used for this project -->
+                                <!-- </div>
+                                <div class="projLinks">
+                                    <a href="" class="liveLink"></a>
+                                    <a href="" class="gitLink"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imgContainer">
+                                <img src="" alt="" class="markup">
+                            </div>
+                            <div class="contentContainer">
+                                <h3></h3>
+                                <p class="subHeading"></p>
+                                <p class="description"></p>
+                                <p class="madeWith"></p>
+                                <div class="skillIcons"> -->
+                                    <!-- skills used for this project -->
+                                <!-- </div>
+                                <div class="projLinks">
+                                    <a href="" class="liveLink"></a>
+                                    <a href="" class="gitLink"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imgContainer">
+                                <img src="" alt="" class="markup">
+                            </div>
+                            <div class="contentContainer"> -->
+                                <!-- <h3></h3>
+                                <p class="subHeading"></p>
+                                <p class="description"></p>
+                                <p class="madeWith"></p>
+                                <div class="skillIcons"> -->
+                                    <!-- skills used for this project -->
+                                <!-- </div>
+                                <div class="projLinks">
+                                    <a href="" class="liveLink"></a>
+                                    <a href="" class="gitLink"></a>
+                                </div>
+                            </div>
+                        </li>  -->
+                    </ul>
                 </div>
             </div>
         </section>
+
         <section class="contact" id="contact">
             <div class="wrapper">
                 <div class="contactInfo">
-                    <h2>get in touch</h2>
+                    <h2><span class="srNumber">04.</span>get in touch</h2>
                     <p>contact me to discuss my projects or anything food! would love to know your fav cuisine and your comfort food</p>
                     <div class="socialIcons">
-                        <a href="https://medium.com/@paridhishah96">
+                        <a href="https://medium.com/@paridhishah96 "target="_blank">
                             <span class="sr-only">Link of my blogs on Medium</span>
                             <i class="fa-brands fa-medium"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/paridhishah96/">
+                        <a href="https://www.linkedin.com/in/paridhishah96/ "target="_blank">
                             <span class="sr-only">Link of my profile on LinkedIn</span>
                             <i class="fa-brands fa-linkedin-in"></i>
                         </a>
-                        <a href="https://github.com/paridhishah96">
+                        <a href="https://github.com/paridhishah96 "target="_blank">
                             <span class="sr-only">Link of my blogs on Medium</span>
                             <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://calendly.com/paridhishahcodes" target="_blank">
+                            <span class="sr-only">Link of my Calendly to look at my availabilty</span>
+                            <i class="fa-solid fa-calendar-days"></i>
                         </a>
                     </div>
                 </div>
@@ -116,8 +211,14 @@
         
     </main>
     <footer>
-        <p>Built by Paridhi Shah</p>
-        <p>Version 2.0</p>        
+        <div class="wrapper">
+            <p class="buildBy">Built by Paridhi Shah</p>
+            
+            <p class="version">Version 2.0
+                <a href="https://github.com/paridhishah96/paridhiShahPortfolio"><i class="fa-solid fa-code-branch"></i>
+                </a>
+            </p>        
+        </div>
     </footer>
 </body>
 </html>

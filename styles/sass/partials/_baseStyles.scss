@@ -5,12 +5,14 @@ img {
 
 .wrapper {
     max-width: 1280px;
-    width: 90%;
+    width: 75%;
     margin: 0 auto;
 }
 
 body {
-  background-color: $primary;
+  height: 100vh;
+   background: linear-gradient(90deg,$accentTwo,$primary,$accentTwo);
+
 }
 
 

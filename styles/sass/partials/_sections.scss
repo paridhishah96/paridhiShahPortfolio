@@ -1,0 +1,69 @@
+main {
+    .srNumber {
+        font-size: 1rem;
+        color: $accentTwo;
+        padding-right: 0.5rem;
+    }
+
+}
+
+.about {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .imgContainer {
+            flex-basis: 20%;
+            img {
+                object-fit: fill;
+                border-radius: 50%;
+            }
+        }
+        .aboutInfo {
+            flex-basis: 70%;
+        }
+    }
+}
+
+.skills {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    .wrapper {
+        display: flex;
+        align-items: center;
+
+        .skillInfo {
+            flex-basis: 25%;
+        }
+
+        .skillList {
+            ul {
+                display: flex;
+                
+                i {
+                    font-size: 3rem;
+                    color: rgba($color: $white, $alpha: 0.8);
+                    transition: color 0.3s ease-in-out;
+                    &:hover, &:focus {
+                        color: $accentThree;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.projects {
+    
+    ul {
+
+        li {
+            box-shadow: 12px 10px 22px 0px rgba($color: $accentThree, $alpha: 0.77);
+            display: flex;
+        }
+    }
+}
