@@ -1,7 +1,8 @@
 main {
+
     .srNumber {
         font-size: 1rem;
-        color: $accentTwo;
+        color: rgba($color: $accentThree, $alpha: 0.6);
         padding-right: 0.5rem;
     }
 
@@ -29,27 +30,49 @@ main {
 }
 
 .skills {
-    height: 50vh;
-    display: flex;
-    align-items: center;
+    height: 70vh;
+    // display: flex;
+    // align-items: center;
     .wrapper {
-        display: flex;
-        align-items: center;
+        // display: flex;
+        // align-items: center;
 
         .skillInfo {
-            flex-basis: 25%;
+            text-align: center;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            border-bottom: $accentTwo 2px solid;
         }
-
         .skillList {
             ul {
-                display: flex;
-                
-                i {
-                    font-size: 3rem;
-                    color: rgba($color: $white, $alpha: 0.8);
-                    transition: color 0.3s ease-in-out;
-                    &:hover, &:focus {
-                        color: $accentThree;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                li {
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    transition: box-shadow 0.3s ease-in-out;
+                    &:hover {
+                        box-shadow: 2px 0px 13px 0px rgba(100, 255, 218, 0.77)
+                    }
+                    // padding: 1rem;
+                    i, span {
+                        font-size: 2.5rem;
+                        color: rgba($color: $white, $alpha: 0.8);
+                        transition: color 0.2s ease-in-out;
+                        &:hover, &:focus {
+                            color: $accentThree;
+                        }
+                    }
+                    p {
+                        padding-top: .5rem;
+                        transition: color 0.2s ease-in-out;
+                        &:hover, &:focus {
+                            color: $accentThree;
+                        }
                     }
                 }
             }
@@ -58,12 +81,73 @@ main {
 }
 
 .projects {
+    margin-top: 2rem;
+    min-height: 100vh;
+    .projectInfo {
+        text-align: center;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        border-bottom: $accentTwo 2px solid;
+        p {
+            padding-bottom: 1rem;
+        }
+    }
     
     ul {
-
-        li {
-            box-shadow: 12px 10px 22px 0px rgba($color: $accentThree, $alpha: 0.77);
+        .projectBox {
             display: flex;
+            .imgContainer {
+                background-image: url(../assets/headerBlob.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+            .contentContainer {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h3 {
+                    padding: 0.25rem 0;
+                }
+                .subHeading {
+                    padding: 0 0 1rem;
+                    color: $accentThree;
+                    font-size: 0.9rem;
+                }
+                .description {
+                    padding: 0 0 1rem;
+                }
+
+                .madeWith{
+                    padding: 0 0 0.25rem;
+                }
+                .skillsApplied {
+                    padding: 0 0 1rem;
+                    ul {
+                        display: flex;
+                        li {
+                            padding-right: 0.5rem;
+                            color: $accentThree;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+                .projLinks {
+                    margin-top: 1rem;
+                    a {
+                        
+                        border: $accentThree solid 1px;
+                        border-radius: 5px;
+                        color: $accentThree;
+                        padding: 0.5rem 1rem;
+                        transition: background-color 0.2s ease-in;
+                        &:hover, &:focus {
+                            background-color: rgba($color: $accentThree, $alpha: 0.2);
+                        }
+                    }
+                }
+            }
         }
     }
 }

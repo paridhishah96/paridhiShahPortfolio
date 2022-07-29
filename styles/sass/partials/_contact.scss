@@ -1,0 +1,30 @@
+main {
+    .contact {
+        height: 100vh;
+        .wrapper {
+            .contactInfo {
+                text-align: center;
+                padding-bottom: 0.5rem;
+                margin-bottom: 1rem;
+                border-bottom: $accentTwo 2px solid;
+            }
+            .contactForm {
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    fieldset {
+                        border: none;
+                        padding: 0;
+                    }
+                    label {
+                        margin-bottom: 0.5rem;
+                    }
+                    input {
+                        margin-bottom: 1rem;
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+}

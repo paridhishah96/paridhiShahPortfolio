@@ -15,7 +15,18 @@ body {
 
 }
 
-
+// DRYing out the code - button used in header/footer
+button {
+  margin-top: 2rem;
+  border: $accentThree solid 1px;
+  border-radius: 5px;
+  color: $accentThree;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease-in;
+  &:hover, &:focus {
+      background-color: rgba($color: $accentThree, $alpha: 0.2);
+  }
+}
 // to skip to main content for those who are using keyboards and don't have to scroll through the header - on all pages
 .skip-link {
     position: absolute;

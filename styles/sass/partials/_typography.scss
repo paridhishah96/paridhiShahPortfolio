@@ -1,14 +1,16 @@
 html {
-    font-size: 125%;
+    font-size: clamp(1.25rem, 1.5vw, 5rem);
+    // font-size: 125%;
+
 } // making sure the font size is a min of 20px
 
 body {
     font-family:  $body;
     font-weight: normal;
     color: $white;
-} // importing and declaring font family from google fonts!
+}
 
-h1, h2, h3 h4 {
+h1, h2, h3, h4 {
     font-family: $headings;
     color: $white;
     margin: 0;
@@ -16,13 +18,12 @@ h1, h2, h3 h4 {
 
 // headings font sizes
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
-
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: normal;
     padding-bottom: 0.5rem;
 }
@@ -30,8 +31,10 @@ h2 {
 h3 {
     font-weight: normal;
     font-size: 1.3rem;
-}
+    margin: 0;
 
+
+}
 
 // stripping the default styling from list and button elements
 ul,
