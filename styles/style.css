@@ -227,7 +227,7 @@ html {
 }
 
 html {
-  font-size: clamp(1.25rem, 1.5vw, 5rem);
+  font-size: clamp(1.25rem, 1.5vw, 3rem);
 }
 
 body {
@@ -298,8 +298,8 @@ img {
 
 body {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, right top, from(#233554), color-stop(#0a192f), to(#233554));
-  background: linear-gradient(90deg, #233554, #0a192f, #233554);
+  background: -webkit-gradient(linear, left top, right top, from(#0a192f), color-stop(#233554), to(#0a192f));
+  background: linear-gradient(90deg, #0a192f, #233554, #0a192f);
 }
 
 button {
@@ -357,8 +357,9 @@ button:hover, button:focus {
   outline: none;
 }
 .headerNav ul li a span {
+  font-size: 0.7rem;
   padding: 0 0.25rem 0 0;
-  color: #233554;
+  color: #64ffda;
 }
 
 header {
@@ -465,7 +466,7 @@ main .srNumber {
 }
 
 .about {
-  height: 50vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,7 +500,7 @@ main .srNumber {
 }
 
 .skills {
-  height: 70vh;
+  height: 100vh;
 }
 .skills .wrapper .skillInfo {
   text-align: center;
@@ -630,16 +631,38 @@ main .srNumber {
   background-color: rgba(100, 255, 218, 0.2);
 }
 
-main .contact {
+.contact {
   height: 100vh;
 }
-main .contact .wrapper .contactInfo {
+.contact .wrapper .contactInfo {
   text-align: center;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
   border-bottom: #233554 2px solid;
 }
-main .contact .wrapper .contactForm form {
+.contact .wrapper .hobbiesAndForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact .wrapper .hobbiesAndForm .hobbies {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+.contact .wrapper .hobbiesAndForm .hobbies p {
+  padding-bottom: 1rem;
+}
+.contact .wrapper .hobbiesAndForm .hobbies p span {
+  font-style: italic;
+}
+.contact .wrapper .hobbiesAndForm .contactForm {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+.contact .wrapper .hobbiesAndForm .contactForm form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,16 +671,30 @@ main .contact .wrapper .contactForm form {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-main .contact .wrapper .contactForm form fieldset {
-  border: none;
-  padding: 0;
-}
-main .contact .wrapper .contactForm form label {
-  margin-bottom: 0.5rem;
-}
-main .contact .wrapper .contactForm form input {
+.contact .wrapper .hobbiesAndForm .contactForm form input {
   margin-bottom: 1rem;
-  width: 30%;
+  padding: 0.5rem 1rem 0.5rem 0.25rem;
+  outline: none;
+}
+.contact .wrapper .hobbiesAndForm .contactForm form input::-webkit-input-placeholder {
+  text-align: center;
+  color: rgba(10, 25, 47, 0.8);
+}
+.contact .wrapper .hobbiesAndForm .contactForm form input::-moz-placeholder {
+  text-align: center;
+  color: rgba(10, 25, 47, 0.8);
+}
+.contact .wrapper .hobbiesAndForm .contactForm form input:-ms-input-placeholder {
+  text-align: center;
+  color: rgba(10, 25, 47, 0.8);
+}
+.contact .wrapper .hobbiesAndForm .contactForm form input::-ms-input-placeholder {
+  text-align: center;
+  color: rgba(10, 25, 47, 0.8);
+}
+.contact .wrapper .hobbiesAndForm .contactForm form input::placeholder {
+  text-align: center;
+  color: rgba(10, 25, 47, 0.8);
 }
 
 /*!

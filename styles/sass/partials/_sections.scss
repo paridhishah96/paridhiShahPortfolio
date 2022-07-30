@@ -9,7 +9,7 @@ main {
 }
 
 .about {
-    height: 50vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     .wrapper {
@@ -30,13 +30,8 @@ main {
 }
 
 .skills {
-    height: 70vh;
-    // display: flex;
-    // align-items: center;
+    height: 100vh;
     .wrapper {
-        // display: flex;
-        // align-items: center;
-
         .skillInfo {
             text-align: center;
             padding-bottom: 0.5rem;

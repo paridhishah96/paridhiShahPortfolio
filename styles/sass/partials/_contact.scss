@@ -1,30 +1,41 @@
-main {
-    .contact {
-        height: 100vh;
-        .wrapper {
-            .contactInfo {
-                text-align: center;
-                padding-bottom: 0.5rem;
-                margin-bottom: 1rem;
-                border-bottom: $accentTwo 2px solid;
-            }
-            .contactForm {
-                form {
-                    display: flex;
-                    flex-direction: column;
-                    fieldset {
-                        border: none;
-                        padding: 0;
-                    }
-                    label {
-                        margin-bottom: 0.5rem;
-                    }
-                    input {
-                        margin-bottom: 1rem;
-                        width: 30%;
+.contact {
+    height: 100vh;
+    .wrapper {
+        .contactInfo {
+            text-align: center;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            border-bottom: $accentTwo 2px solid;
+        }
+        .hobbiesAndForm {
+            display: flex;
+            justify-content: space-between;
+            .hobbies {
+                flex-basis: 45%;
+                p {
+                    padding-bottom: 1rem;
+                    span {
+                        font-style: italic;
                     }
                 }
             }
+            .contactForm {
+                flex-basis: 45%;
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    input {
+                        margin-bottom: 1rem;
+                        padding: 0.5rem 1rem 0.5rem 0.25rem;
+                        outline: none;
+                        &::placeholder {
+                            text-align: center;
+                            color: rgba($color: $primary, $alpha: 0.8);
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
