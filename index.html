@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paridhi Shah</title>
-    
     <!-- Icons -->
+    <link rel="stylesheet" href="./styles/devicons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/319714ae3d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +22,24 @@
 <body>
     <!-- Skip Links -->
     <a href="#mainContent" class="skip-link">Skip to main content.</a>
-
+    <div class="socialIcons">
+        <a href="https://www.linkedin.com/in/paridhishah96/ "target="_blank">
+            <span class="sr-only">Link of my profile on LinkedIn</span>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/paridhishah96 "target="_blank">
+            <span class="sr-only">Link of my blogs on Medium</span>
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://calendly.com/paridhishahcodes" target="_blank">
+            <span class="sr-only">Link of my Calendly to look at my availabilty</span>
+            <i class="fa-solid fa-calendar-days"></i>
+        </a>
+        <a href="https://medium.com/@paridhishah96 "target="_blank">
+            <span class="sr-only">Link of my blogs on Medium</span>
+            <i class="fa-brands fa-medium"></i>
+        </a>
+    </div>
     <nav class="headerNav" id="headerNav">
         <a href="#" id="logo">Logo - PS</a>
         <div class="hamburgerMenu" id="hamburgerMenu"> 
@@ -35,10 +51,13 @@
                     <a href="#about"><span class="srNumber">02.</span>about</a>
                 </li>
                 <li>
-                    <a href="#projects" class="last"><span class="srNumber">03.</span>projects</a>
+                    <a href="#skills"><span class="srNumber">03.</span>skills</a>
+                </li>
+                <li>
+                    <a href="#projects" class="last"><span class="srNumber">04.</span>projects</a>
                 </li>
                 <li> 
-                    <a href="#contact"><span class="srNumber">04.</span>contact</a>
+                    <a href="#contact"><span class="srNumber">05.</span>contact</a>
                 </li>
             </ul>
         </div>
@@ -58,7 +77,7 @@
         <section class="about" id="about">
             <div class="wrapper">
                 <div class="imgContainer">
-                    <img src="https://placebear.com/275/275" alt="">
+                    <img src="./assets/aboutImage.jpg" alt="Paridhi (my) picture sitting in front of a music wall">
                 </div>
                 <div class="aboutInfo">
                     <h2><span class="srNumber">02.</span>about me</h2>
@@ -236,42 +255,24 @@
         <section class="contact" id="contact">
             <div class="wrapper">
                 <div class="contactInfo">
-                    <h2><span class="srNumber">04.</span>get in touch</h2>
+                    <h2><span class="srNumber">05.</span>get in touch</h2>
                     <p>contact me to discuss my projects or anything tech!</p>
-                    <!-- <div class="socialIcons">
-                        <a href="https://medium.com/@paridhishah96 "target="_blank">
-                            <span class="sr-only">Link of my blogs on Medium</span>
-                            <i class="fa-brands fa-medium"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/paridhishah96/ "target="_blank">
-                            <span class="sr-only">Link of my profile on LinkedIn</span>
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/paridhishah96 "target="_blank">
-                            <span class="sr-only">Link of my blogs on Medium</span>
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://calendly.com/paridhishahcodes" target="_blank">
-                            <span class="sr-only">Link of my Calendly to look at my availabilty</span>
-                            <i class="fa-solid fa-calendar-days"></i>
-                        </a>
-                    </div> -->
                 </div>
                 <div class="hobbiesAndForm">
                     <div class="hobbies">
-                        <p>I <strong>love</strong> all things food! I am your person if you would like to talk about recipes, an interesting dish or your favorite restaurant</p>
+                        <p>I <strong>love</strong> all things food! I am your person if you would like to talk about recipes, an interesting dish or your favorite restaurant. Spoiler alert! I'm vegetarian</p>
                         <p>Learning languages (not programming) is also something that I am passionate about. I am currently <span>trying</span> to learn Mandarin!</p>
                     </div>
                     <div class="contactForm">
-                        <form action="#">
+                        <form action="https://formspree.io/f/xaykwewj" method="POST">
                             <label for="name" class="sr-only">name</label>
-                            <input type="text" id="name" class="nameEmail" placeholder="your name here" required>
+                            <input type="text" name="namme" id="name" class="nameEmail" placeholder="your name here" required>
     
                             <label for="email" class="sr-only">email</label>
-                            <input type="email" id="email" class="nameEmail" placeholder="your email here" required>
+                            <input type="email" id="email" name="email" class="nameEmail" placeholder="your email here" required>
                             
                             <label for="message" class="sr-only">message</label>
-                            <textarea id="message" placeholder="" cols="30" rows="10"></textarea>
+                            <textarea id="message" name="message" cols="30" rows="10"></textarea>
     
                             <button>submit</button>
                         </form>
@@ -284,13 +285,16 @@
     <footer>
         <div class="wrapper">
             <p class="buildBy">Built by Paridhi Shah</p>
-            
-            <p class="version">Version 2.0
-                <a href="https://github.com/paridhishah96/paridhiShahPortfolio"><i class="fa-solid fa-code-branch"></i>
+            <div class="version">
+                <p>Version 2.0</p> 
+                <a href="https://github.com/paridhishah96/paridhiShahPortfolio">
+                    <i class="fa-solid fa-code-branch"></i>
                 </a>
-            </p>        
+            </div>
+                   
         </div>
     </footer>
+    <!-- <script src="./scripts.js/main.js" type="module"></script> -->
 </body>
 </html>
 <!-- colour palette inspiration from www.brittanychiang.com/ -->

@@ -9,7 +9,7 @@ main {
 }
 
 .about {
-    height: 100vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     .wrapper {
@@ -17,20 +17,22 @@ main {
         justify-content: space-between;
         align-items: center;
         .imgContainer {
-            flex-basis: 20%;
+            flex-basis: 29%;
             img {
                 object-fit: fill;
                 border-radius: 50%;
             }
         }
         .aboutInfo {
-            flex-basis: 70%;
+            flex-basis: 68%;
         }
     }
 }
 
 .skills {
     height: 100vh;
+    display: flex;
+    align-items: center;
     .wrapper {
         .skillInfo {
             text-align: center;

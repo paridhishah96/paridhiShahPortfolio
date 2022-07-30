@@ -227,13 +227,13 @@ html {
 }
 
 html {
-  font-size: clamp(1.25rem, 1.5vw, 3rem);
+  font-size: 1.25rem;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
-  color: #ffffff;
+  color: #ccd6f6;
 }
 
 h1, h2, h3, h4 {
@@ -376,9 +376,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  right: 30%;
 }
 header::before {
   position: absolute;
@@ -387,7 +385,7 @@ header::before {
   top: 20%;
   width: 450px;
   height: 450px;
-  background: #17141d;
+  background: rgba(204, 214, 246, 0.3);
   border-radius: 62% 47% 82% 35%/45% 45% 80% 66%;
   will-change: border-radius, transform, opacity;
   animation: sliderShape 5s linear infinite;
@@ -466,7 +464,7 @@ main .srNumber {
 }
 
 .about {
-  height: 100vh;
+  height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,8 +484,8 @@ main .srNumber {
           align-items: center;
 }
 .about .wrapper .imgContainer {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
+  -ms-flex-preferred-size: 29%;
+      flex-basis: 29%;
 }
 .about .wrapper .imgContainer img {
   -o-object-fit: fill;
@@ -495,12 +493,18 @@ main .srNumber {
   border-radius: 50%;
 }
 .about .wrapper .aboutInfo {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
+  -ms-flex-preferred-size: 68%;
+      flex-basis: 68%;
 }
 
 .skills {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .skills .wrapper .skillInfo {
   text-align: center;
@@ -697,9 +701,53 @@ main .srNumber {
   color: rgba(10, 25, 47, 0.8);
 }
 
+.socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 60%;
+  left: 2%;
+}
+.socialIcons::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #64ffda;
+}
+.socialIcons i {
+  color: #ccd6f6;
+  font-size: 1.1rem;
+  padding-bottom: 0.8rem;
+  position: relative;
+  top: 0;
+  -webkit-transition: top ease 0.3s, color ease 0.3s;
+  transition: top ease 0.3s, color ease 0.3s;
+}
+.socialIcons i:hover, .socialIcons i:focus {
+  color: #64ffda;
+  top: -5px;
+}
+
 /*!
  *  Devicons 1.8.0 made by Theodore Vorillas / http://vorillaz.com 
  */
+@font-face {
+  font-family: "devicons";
+  src: url("../fonts/devicons.eot?xqxft6");
+  src: url("../fonts/devicons.eot?#iefixxqxft6") format("embedded-opentype"), url("../fonts/devicons.woff?xqxft6") format("woff"), url("../fonts/devicons.ttf?xqxft6") format("truetype"), url("../fonts/devicons.svg?xqxft6#devicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 .devicons {
   font-family: "devicons";
   font-style: normal;
@@ -1477,8 +1525,8 @@ main .srNumber {
 }
 
 footer {
+  margin-top: 50px;
   font-family: "Nunito", sans-serif;
-  border-top: 1px solid #233554;
 }
 footer .wrapper {
   padding: 0.5rem 0;
@@ -1503,15 +1551,27 @@ footer .wrapper .buildBy {
   padding-bottom: 0.3rem;
 }
 footer .wrapper .version {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .wrapper .version p {
   font-size: 0.8rem;
-  color: #233554;
+  color: #ccd6f6;
+  padding-right: 0.5rem;
 }
 footer .wrapper .version a {
   font-size: 0.6rem;
-  -webkit-transition: color 0.3s ease-in;
-  transition: color 0.3s ease-in;
 }
-footer .wrapper .version a:hover, footer .wrapper .version a:focus {
-  font-size: 0.8rem;
-  color: #64ffda;
+footer .wrapper .version a i {
+  position: relative;
+  top: 0;
+  -webkit-transition: top ease 0.3s;
+  transition: top ease 0.3s;
+}
+footer .wrapper .version a i:hover, footer .wrapper .version a i:focus {
+  top: -5px;
 }

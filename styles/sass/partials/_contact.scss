@@ -39,3 +39,33 @@
         }
     }
 }
+
+// fixed on the left of the page in the laptop screen version
+.socialIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 60%;
+    left: 2%;
+    &::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 200px;
+        margin: 0 auto;
+        background-color: $accentThree;
+    }
+    i {
+        color: #ccd6f6;
+        font-size: 1.1rem;
+        padding-bottom: 0.8rem;
+        position: relative;
+        top: 0;
+        transition: top ease 0.3s, color ease 0.3s;
+        &:hover, &:focus {
+            color: $accentThree;
+            top: -5px;
+        }
+    }
+}
