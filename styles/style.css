@@ -335,6 +335,7 @@ button:hover, button:focus {
 }
 
 .headerNav {
+  z-index: 10;
   height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,7 +347,7 @@ button:hover, button:focus {
       -ms-flex-align: center;
           align-items: center;
 }
-.headerNav .hamIcon {
+.headerNav .hamburgerNav {
   display: none;
 }
 .headerNav ul {
@@ -556,8 +557,8 @@ main .fadeIn.appear {
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
 .skills .wrapper .skillList ul li:hover {
-  -webkit-box-shadow: 2px 0px 13px 0px rgba(100, 255, 218, 0.77);
-          box-shadow: 2px 0px 13px 0px rgba(100, 255, 218, 0.77);
+  -webkit-box-shadow: 2px 0px 13px 0px rgba(100, 255, 218, 0.5);
+          box-shadow: 2px 0px 13px 0px rgba(100, 255, 218, 0.5);
 }
 .skills .wrapper .skillList ul li i, .skills .wrapper .skillList ul li span {
   font-size: 2.5rem;
@@ -570,11 +571,6 @@ main .fadeIn.appear {
 }
 .skills .wrapper .skillList ul li p {
   padding-top: 0.5rem;
-  -webkit-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
-}
-.skills .wrapper .skillList ul li p:hover, .skills .wrapper .skillList ul li p:focus {
-  color: #64ffda;
 }
 
 .projects {
@@ -1687,6 +1683,67 @@ footer .wrapper .version a i:hover, footer .wrapper .version a i:focus {
 @media (max-width: 700px) {
   .wrapper {
     width: 85%;
+  }
+  .headerNav .defaultNav {
+    display: none;
+  }
+  .headerNav .hamburgerNav {
+    display: block;
+  }
+  .headerNav .slideOutNav {
+    min-width: 100vw;
+    height: 100vh;
+    position: absolute;
+    right: -100vw;
+    z-index: 20;
+    -webkit-transition: right 0.4s ease-in-out;
+    transition: right 0.4s ease-in-out;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: -webkit-gradient(linear, left top, right top, from(#0a192f), color-stop(#233554), to(#0a192f));
+    background: linear-gradient(90deg, #0a192f, #233554, #0a192f);
+  }
+  .headerNav .slideOutNav li {
+    font-size: 2rem;
+    padding: 2rem 0;
+  }
+  .headerNav .slideOutNav li a {
+    -webkit-transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  }
+  .headerNav .slideOutNav li a:hover, .headerNav .slideOutNav li a:focus {
+    color: #64ffda;
+    font-size: 2.5rem;
+    outline: none;
+  }
+  .trigger:checked ~ .slideOutNav {
+    right: 0;
+  }
+  .hamburgerNav {
+    position: relative;
+  }
+  .hamburgerNav .material-symbols-outlined {
+    font-size: 2rem;
+    padding-right: 1rem;
+  }
+  .hamburgerNav .trigger {
+    position: absolute;
+    top: 3px;
+    right: 15px;
+    opacity: 0;
+  }
+  .hamburgerNav input[type=checkbox] {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
   }
   .projects ul .projectBox {
     display: block;

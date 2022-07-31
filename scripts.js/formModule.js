@@ -1,3 +1,5 @@
+// creating a function that stops the page from going to formspree's website and shows the user either a success or an error!
+
 export const form = document.getElementById("myForm");
 const input = document.getElementById("input");
 // defining the function that will return either errorr or success

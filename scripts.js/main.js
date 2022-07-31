@@ -1,6 +1,8 @@
 import { form, handleSubmit } from "./formModule.js";
 import { faders, appearOnScroll } from "./fadeModule.js";
 
+
+// init to initialize specific function upon page load
 const init = function () {
     // function to fade in certain elements upon scroll
     faders.forEach(fader => {

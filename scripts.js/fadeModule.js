@@ -1,3 +1,5 @@
+// this module fades in various sections upon scroll 
+
 export const faders = document.querySelectorAll(".fadeIn");
 
 

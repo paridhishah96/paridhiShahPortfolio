@@ -62,9 +62,8 @@ main {
                     text-align: center;
                     transition: box-shadow 0.3s ease-in-out;
                     &:hover {
-                        box-shadow: 2px 0px 13px 0px rgba(100, 255, 218, 0.77)
+                        box-shadow: 2px 0px 13px 0px rgba($color: $accentThree, $alpha: 0.5);
                     }
-                    // padding: 1rem;
                     i, span {
                         font-size: 2.5rem;
                         color: rgba($color: $white, $alpha: 0.8);
@@ -75,10 +74,6 @@ main {
                     }
                     p {
                         padding-top: .5rem;
-                        transition: color 0.2s ease-in-out;
-                        &:hover, &:focus {
-                            color: $accentThree;
-                        }
                     }
                 }
             }

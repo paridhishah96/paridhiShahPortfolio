@@ -3,10 +3,69 @@
     .wrapper {
         width: 85%;
     }
-    // hamburger menu 
-    // .headerNav {
 
-    // }
+
+    // hamburger menu 
+    .headerNav {
+        .defaultNav {
+            display: none;
+        }
+        .hamburgerNav {
+            display: block;
+        }
+        .slideOutNav {
+            // display: block;
+            min-width: 100vw;
+            height: 100vh;
+            position: absolute;
+            right: -100vw;
+            z-index: 20;
+            transition: right 0.4s ease-in-out;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(90deg,$primary,$accentTwo,$primary);
+            li {
+                font-size: 2rem;
+                padding: 2rem 0;
+                a {
+                    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+                        &:hover, &:focus {
+                            color: $accentThree;
+                            font-size: 2.5rem;
+                            outline: none;
+                        }
+                }
+            }
+        }
+    }
+    
+    
+    .trigger:checked ~ .slideOutNav {
+        right: 0;
+    }
+    
+    .hamburgerNav {
+        position: relative;
+        .material-symbols-outlined {
+            font-size: 2rem;
+            padding-right: 1rem;
+        }
+        .trigger {
+            position: absolute;
+            top: 3px;
+            right: 15px;
+            opacity: 0;
+        }
+    
+        input[type=checkbox] {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+        
+        
+    }
 
     .projects {
         ul {
@@ -80,7 +139,7 @@
             }
         }
     }
-    
+
 
 
     .contact {
@@ -100,47 +159,3 @@
     }
     
 } // end of media queries for max width - 600px
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// @media (max-width: ) {
-    
-// } // end of media queries for max width -
-// @media (max-width: ) {
-    
-// } // end of media queries for max width -
-// @media (max-width: ) {
-    
-// } // end of media queries for max width -
-// @media (max-width: ) {
-    
-// } // end of media queries for max width -
-// @media (max-width: ) {
-    
-// } // end of media queries for max width -
-// @media (max-width: ) {
-    
-// } // end of media queries for max width -
-// @media (max-width: ) {
-    
-// } // end of media queries for max width -
-// @media (max-width: ) {
-    
-// } // end of media queries for max width -
-// @media (max-width: ) {
-    
-// } // end of media queries for max width -
