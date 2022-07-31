@@ -300,6 +300,7 @@ body {
   height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(#0a192f), color-stop(#233554), to(#0a192f));
   background: linear-gradient(90deg, #0a192f, #233554, #0a192f);
+  scroll-behavior: smooth;
 }
 
 button {
@@ -462,9 +463,17 @@ main .srNumber {
   color: rgba(100, 255, 218, 0.6);
   padding-right: 0.5rem;
 }
+main .fadeIn {
+  opacity: 0;
+  -webkit-transition: opacity 1s cubic-bezier(1, 0, 1, 0.91);
+  transition: opacity 1s cubic-bezier(1, 0, 1, 0.91);
+}
+main .fadeIn.appear {
+  opacity: 1;
+}
 
 .about {
-  height: 70vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

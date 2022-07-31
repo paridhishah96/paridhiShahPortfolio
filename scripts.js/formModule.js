@@ -1,7 +1,5 @@
 export const form = document.getElementById("myForm");
 const input = document.getElementById("input");
-
-console.log(form)
 // defining the function that will return either errorr or success
 export async function handleSubmit(event) {
     event.preventDefault(); //making sure the form page does not load the formspree website
