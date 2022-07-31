@@ -306,7 +306,6 @@ body {
   height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(#0a192f), color-stop(#233554), to(#0a192f));
   background: linear-gradient(90deg, #0a192f, #233554, #0a192f);
-  scroll-behavior: smooth;
 }
 
 button {
@@ -346,6 +345,9 @@ button:hover, button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.headerNav .hamIcon {
+  display: none;
 }
 .headerNav ul {
   display: -webkit-box;
@@ -511,6 +513,9 @@ main .fadeIn.appear {
   -ms-flex-preferred-size: 68%;
       flex-basis: 68%;
 }
+.about .wrapper .aboutInfo p {
+  padding-bottom: 0.5rem;
+}
 
 .skills {
   height: 100vh;
@@ -586,15 +591,23 @@ main .fadeIn.appear {
   padding-bottom: 1rem;
 }
 .projects ul .projectBox {
+  margin-bottom: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0 0 10px #ccd6f6;
+          box-shadow: 0 0 10px #ccd6f6;
 }
 .projects ul .projectBox .imgContainer {
   background-image: url(../assets/headerBlob.svg);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
 }
 .projects ul .projectBox .contentContainer {
   display: -webkit-box;
@@ -607,6 +620,9 @@ main .fadeIn.appear {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 2rem 0;
+  -ms-flex-preferred-size: 43%;
+      flex-basis: 43%;
 }
 .projects ul .projectBox .contentContainer h3 {
   padding: 0.25rem 0;
@@ -629,19 +645,27 @@ main .fadeIn.appear {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .projects ul .projectBox .contentContainer .skillsApplied ul li {
-  padding-right: 0.5rem;
+  padding: 0.5rem 1rem 0 0;
   color: #64ffda;
   font-size: 0.8rem;
 }
 .projects ul .projectBox .contentContainer .projLinks {
   margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .projects ul .projectBox .contentContainer .projLinks a {
   border: #64ffda solid 1px;
   border-radius: 5px;
   color: #64ffda;
+  margin: 0.5rem 0.5rem 0 0;
   padding: 0.5rem 1rem;
   -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
@@ -663,9 +687,6 @@ main .fadeIn.appear {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .contact .wrapper .hobbiesAndForm .hobbies {
   -ms-flex-preferred-size: 45%;
@@ -767,6 +788,10 @@ main .fadeIn.appear {
     pointer-events: all;
   }
 }
+.mainSocial {
+  display: none;
+}
+
 .socialIcons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1657,4 +1682,93 @@ footer .wrapper .version a i {
 }
 footer .wrapper .version a i:hover, footer .wrapper .version a i:focus {
   top: -5px;
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    width: 85%;
+  }
+  .projects ul .projectBox {
+    display: block;
+  }
+  .projects ul .projectBox .contentContainer {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .wrapper {
+    width: 90%;
+  }
+  .about {
+    height: auto;
+  }
+  .about .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .about .wrapper .aboutInfo {
+    margin: 2rem 0;
+  }
+  .mainSocial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .skills {
+    height: auto;
+    margin: 3rem 0;
+  }
+  .skills .wrapper .skillList ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .socialIcons {
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: inherit;
+  }
+  .socialIcons::after {
+    content: none;
+  }
+  .socialIcons a i {
+    font-size: 2rem;
+    -webkit-transition: top ease 0.3s, color ease 0.3s;
+    transition: top ease 0.3s, color ease 0.3s;
+  }
+  .socialIcons a i:hover, .socialIcons a i:focus {
+    color: #64ffda;
+    top: -5px;
+  }
+  .contact {
+    height: auto;
+  }
+  .contact .wrapper .hobbiesAndForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer {
+    margin-top: 30px;
+  }
 }

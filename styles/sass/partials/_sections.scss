@@ -31,6 +31,9 @@ main {
         }
         .aboutInfo {
             flex-basis: 68%;
+            p {
+                padding-bottom: 0.5rem;
+            }
         }
     }
 }
@@ -98,18 +101,23 @@ main {
     
     ul {
         .projectBox {
+            margin-bottom: 5vh;
             display: flex;
+            box-shadow: 0 0 10px $slate;
             .imgContainer {
                 background-image: url(../assets/headerBlob.svg);
+                height: fit-content;
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center;
+                flex-basis: 55%;
             }
             .contentContainer {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-
+                padding: 2rem 0;
+                flex-basis: 43%;
                 h3 {
                     padding: 0.25rem 0;
                 }
@@ -129,8 +137,9 @@ main {
                     padding: 0 0 1rem;
                     ul {
                         display: flex;
+                        flex-wrap: wrap;
                         li {
-                            padding-right: 0.5rem;
+                            padding: 0.5rem 1rem 0 0;
                             color: $accentThree;
                             font-size: 0.8rem;
                         }
@@ -138,11 +147,13 @@ main {
                 }
                 .projLinks {
                     margin-top: 1rem;
+                    display: flex;
+                    flex-wrap: wrap;
                     a {
-                        
                         border: $accentThree solid 1px;
                         border-radius: 5px;
                         color: $accentThree;
+                        margin: 0.5rem 0.5rem 0 0;
                         padding: 0.5rem 1rem;
                         transition: background-color 0.2s ease-in;
                         &:hover, &:focus {

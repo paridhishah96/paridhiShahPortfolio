@@ -9,7 +9,7 @@
         }
         .hobbiesAndForm {
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             .hobbies {
                 flex-basis: 45%;
                 p {
@@ -60,6 +60,7 @@
     }
 }
 
+// animation to show success or error upon form submission
 @keyframes status {
     0% {
         opacity: 1;
@@ -75,7 +76,12 @@
     }
 }
 
-// fixed on the left of the page in on bigger screens
+.mainSocial {
+    display: none;
+}
+
+// fixed on the left of the page on bigger screens
+
 .socialIcons {
     display: flex;
     flex-direction: column;
@@ -92,7 +98,7 @@
         background-color: $accentThree;
     }
     i {
-        color: #ccd6f6;
+        color: $slate;
         font-size: 1.1rem;
         padding-bottom: 0.8rem;
         position: relative;

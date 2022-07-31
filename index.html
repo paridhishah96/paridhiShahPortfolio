@@ -24,46 +24,35 @@
 <body id="home">
     <!-- Skip Links -->
     <a href="#mainContent" class="skip-link">Skip to main content.</a>
-    <div class="socialIcons">
-        <a href="https://www.linkedin.com/in/paridhishah96/ "target="_blank">
-            <span class="sr-only">Link of my profile on LinkedIn</span>
-            <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/paridhishah96 "target="_blank">
-            <span class="sr-only">Link of my blogs on Medium</span>
-            <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://calendly.com/paridhishahcodes" target="_blank">
-            <span class="sr-only">Link of my Calendly to look at my availabilty</span>
-            <i class="fa-solid fa-calendar-days"></i>
-        </a>
-        <a href="https://medium.com/@paridhishah96 "target="_blank">
-            <span class="sr-only">Link of my blogs on Medium</span>
-            <i class="fa-brands fa-medium"></i>
-        </a>
-    </div>
+
+
+    
     <nav class="headerNav" id="headerNav">
         <a href="#" id="logo" class="logo">ps.</a>
         <div class="hamburgerMenu" id="hamburgerMenu"> 
-            <ul>
-                <li>
-                    <a href="#home"><span class="srNumber">01.</span>home</a>
-                </li>
-                <li>
-                    <a href="#about"><span class="srNumber">02.</span>about</a>
-                </li>
-                <li>
-                    <a href="#skills"><span class="srNumber">03.</span>skills</a>
-                </li>
-                <li>
-                    <a href="#projects" class="last"><span class="srNumber">04.</span>projects</a>
-                </li>
-                <li> 
-                    <a href="#contact"><span class="srNumber">05.</span>contact</a>
-                </li>
-            </ul>
+            <span class="material-symbols-outlined hamIcon">menu</span>
+            <div class="hamMenu">
+                <ul>
+                    <li tabindex="0">
+                        <a href="#home"><span class="srNumber">01.</span>home</a>
+                    </li>
+                    <li tabindex="0">
+                        <a href="#about"><span class="srNumber">02.</span>about</a>
+                    </li>
+                    <li tabindex="0">
+                        <a href="#skills"><span class="srNumber">03.</span>skills</a>
+                    </li>
+                    <li tabindex="0">
+                        <a href="#projects" class="last"><span class="srNumber">04.</span>projects</a>
+                    </li>
+                    <li tabindex="0"> 
+                        <a href="#contact"><span class="srNumber">05.</span>contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+    
     <header>
         <div class="bgBlob"></div>
         <div class="heading">                  
@@ -83,10 +72,30 @@
                 </div>
                 <div class="aboutInfo">
                     <h2><span class="srNumber">02.</span>about me</h2>
-                    <p>I am a Front-End Developer with a passion to build engaging, accessible and responsive apps using HTML, CSS and JQuery. Previously, I worked in customer service, where I developed strong skills like problem solving, logical thinking and strong communication. I carry my love and curiosity for technology into my mind set for coding, to never stop learning exploring and growing as a person and a team member.</p>
+                    <p>I am a Front-End Developer with a passion to build engaging, accessible and responsive apps using HTML, CSS and JQuery. Previously, I worked in customer service, where I developed strong skills like problem solving, logical thinking and strong communication.</p>
+                    <p>I carry my love and curiosity for technology into my mind set for coding, to never stop learning, exploring and growing as a person and a team member.</p>
                 </div>
             </div>
+            
         </section>
+        <div class="socialIcons mainSocial">
+            <a href="https://www.linkedin.com/in/paridhishah96/ "target="_blank">
+                <span class="sr-only">Link of my profile on LinkedIn</span>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/paridhishah96 "target="_blank">
+                <span class="sr-only">Link of my blogs on Medium</span>
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://calendly.com/paridhishahcodes" target="_blank">
+                <span class="sr-only">Link of my Calendly to look at my availabilty</span>
+                <i class="fa-solid fa-calendar-days"></i>
+            </a>
+            <a href="https://medium.com/@paridhishah96 "target="_blank">
+                <span class="sr-only">Link of my blogs on Medium</span>
+                <i class="fa-brands fa-medium"></i>
+            </a>
+        </div>
 
         <section class="skills" id="skills">
             <div class="wrapper">
@@ -173,8 +182,33 @@
                     <ul>
                         <li class="projectBox fadeIn">
                             <div class="imgContainer">
+                                <img src="./assets/projectTwoMockup.png" alt="A showcase of
+                                what my JavaScript project looks like on a laptop screen and a phone screen" class="markup">
+                            </div>
+                            <div class="contentContainer">
+                                <h3>Recipe Generator</h3>
+                                <p class="subHeading">Can't decide what to eat? We got you!</p>
+                                <p class="description">This website uses the Spoonacular API and returns a random recipe from their data base on the basis of your preferred cuisine, diet or using the keyword searched by the user. This was a paired project with Nick Gourlay.</p>
+                                <p class="madeWith">Skills Applied:</p>
+                                <div class="skillsApplied">
+                                    <ul>
+                                        <li>JavaScript</li>
+                                        <li>SASS</li>
+                                        <li>HTML5</li>
+                                        <li>Git Branching</li>
+                                        <li>Paired Programming</li>
+                                    </ul>
+                                </div>
+                                <div class="projLinks">
+                                    <a href="https://recipe-generator-nick-paridhi.netlify.app/" class="liveLink">Live Site</a>
+                                    <a href="https://github.com/recipeGeneratorNickParidhi/recipeGenerator" class="gitLink">GitHub Repo</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="projectBox fadeIn">
+                            <div class="imgContainer">
                                 <img src="./assets/projectOneMockup.png" alt="A showcase of
-                                 what my PSD projects looks like on a laptop screen and a phone screen" class="markup">
+                                 what my PSD project looks like on a laptop screen and a phone screen" class="markup">
                                 </div>
                             <div class="contentContainer">
                                 <h3>Get creative✧</h3>
@@ -186,7 +220,7 @@
                                         <li>SASS</li>
                                         <li>HTML5</li>
                                         <li>GitHub</li>
-                                        <li>Responsive</li>
+                                        <li>Responsiveness</li>
                                     </ul>
                                 </div>
                                 <div class="projLinks">
@@ -195,60 +229,54 @@
                                 </div>
                             </div>
                         </li>
-                        <!-- <li>
+                        <!-- <li class="projectBox fadeIn">
                             <div class="imgContainer">
-                                <img src="" alt="" class="markup">
-                            </div>
+                                <img src="./assets/projectOneMockup.png" alt="A showcase of
+                                 what my PSD project looks like on a laptop screen and a phone screen" class="markup">
+                                </div>
                             <div class="contentContainer">
-                                <h3></h3>
-                                <p class="subHeading"></p>
-                                <p class="description"></p>
-                                <p class="madeWith"></p>
-                                <div class="skillIcons"> -->
-                                    <!-- skills used for this project -->
-                                <!-- </div>
+                                <h3>Get creative✧</h3>
+                                <p class="subHeading">Your go-to aesthetic blog!</p>
+                                <p class="description">A multi-page responsive and accessible blog website. Creating a pixel-perfect design using the PSD provided, along with some transitions and animations</p>
+                                <p class="madeWith">Skills Applied:</p>
+                                <div class="skillsApplied">
+                                    <ul>
+                                        <li>SASS</li>
+                                        <li>HTML5</li>
+                                        <li>GitHub</li>
+                                        <li>Responsiveness</li>
+                                    </ul>
+                                </div>
                                 <div class="projLinks">
-                                    <a href="" class="liveLink"></a>
-                                    <a href="" class="gitLink"></a>
+                                    <a href="https://project-one-paridhi-creative.netlify.app/" class="liveLink">Live Site</a>
+                                    <a href="https://github.com/paridhishah96/paridhiShahProjectOne" class="gitLink">GitHub Repo</a>
                                 </div>
                             </div>
-                        </li>
-                        <li>
+                        </li> -->
+                        <!-- <li class="projectBox fadeIn">
                             <div class="imgContainer">
-                                <img src="" alt="" class="markup">
-                            </div>
+                                <img src="./assets/projectOneMockup.png" alt="A showcase of
+                                 what my PSD project looks like on a laptop screen and a phone screen" class="markup">
+                                </div>
                             <div class="contentContainer">
-                                <h3></h3>
-                                <p class="subHeading"></p>
-                                <p class="description"></p>
-                                <p class="madeWith"></p>
-                                <div class="skillIcons"> -->
-                                    <!-- skills used for this project -->
-                                <!-- </div>
+                                <h3>Get creative✧</h3>
+                                <p class="subHeading">Your go-to aesthetic blog!</p>
+                                <p class="description">A multi-page responsive and accessible blog website. Creating a pixel-perfect design using the PSD provided, along with some transitions and animations</p>
+                                <p class="madeWith">Skills Applied:</p>
+                                <div class="skillsApplied">
+                                    <ul>
+                                        <li>SASS</li>
+                                        <li>HTML5</li>
+                                        <li>GitHub</li>
+                                        <li>Responsiveness</li>
+                                    </ul>
+                                </div>
                                 <div class="projLinks">
-                                    <a href="" class="liveLink"></a>
-                                    <a href="" class="gitLink"></a>
+                                    <a href="https://project-one-paridhi-creative.netlify.app/" class="liveLink">Live Site</a>
+                                    <a href="https://github.com/paridhishah96/paridhiShahProjectOne" class="gitLink">GitHub Repo</a>
                                 </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="imgContainer">
-                                <img src="" alt="" class="markup">
-                            </div>
-                            <div class="contentContainer"> -->
-                                <!-- <h3></h3>
-                                <p class="subHeading"></p>
-                                <p class="description"></p>
-                                <p class="madeWith"></p>
-                                <div class="skillIcons"> -->
-                                    <!-- skills used for this project -->
-                                <!-- </div>
-                                <div class="projLinks">
-                                    <a href="" class="liveLink"></a>
-                                    <a href="" class="gitLink"></a>
-                                </div>
-                            </div>
-                        </li>  -->
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -284,8 +312,25 @@
                 </div>
             </div>
         </section>
-        
     </main>
+    <div class="socialIcons">
+        <a href="https://www.linkedin.com/in/paridhishah96/ "target="_blank">
+            <span class="sr-only">Link of my profile on LinkedIn</span>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/paridhishah96 "target="_blank">
+            <span class="sr-only">Link of my blogs on Medium</span>
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://calendly.com/paridhishahcodes" target="_blank">
+            <span class="sr-only">Link of my Calendly to look at my availabilty</span>
+            <i class="fa-solid fa-calendar-days"></i>
+        </a>
+        <a href="https://medium.com/@paridhishah96 "target="_blank">
+            <span class="sr-only">Link of my blogs on Medium</span>
+            <i class="fa-brands fa-medium"></i>
+        </a>
+    </div>
     <footer>
         <div class="topLink" id="topLink">
             <a href="">

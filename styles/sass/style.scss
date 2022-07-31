@@ -14,11 +14,14 @@
 @import "./partials/sections";
 
 
-// the form styling from contact and blog page
+// the form and contact section styling
 @import "./partials/contact";
+
+// External library for dev icons.
 @import "./partials/devicone";
+
 // footer styling
 @import "./partials/footer";
 
 // Media queries
-// @import "./partials/mediaqueries";
+@import "./partials/mediaqueries";
