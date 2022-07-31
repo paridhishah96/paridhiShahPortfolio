@@ -19,7 +19,7 @@
     <!-- SASS/CSS style sheet -->
     <link rel="stylesheet" href="./styles/style.css">
     </head>
-<body>
+<body id="home">
     <!-- Skip Links -->
     <a href="#mainContent" class="skip-link">Skip to main content.</a>
     <div class="socialIcons">
@@ -41,7 +41,7 @@
         </a>
     </div>
     <nav class="headerNav" id="headerNav">
-        <a href="#" id="logo">Logo - PS</a>
+        <a href="#" id="logo">ps</a>
         <div class="hamburgerMenu" id="hamburgerMenu"> 
             <ul>
                 <li>
@@ -264,17 +264,19 @@
                         <p>Learning languages (not programming) is also something that I am passionate about. I am currently <span>trying</span> to learn Mandarin!</p>
                     </div>
                     <div class="contactForm">
-                        <form action="https://formspree.io/f/xaykwewj" method="POST">
+                        <form action="https://formspree.io/f/xaykwewj" method="POST" id="myForm">
                             <label for="name" class="sr-only">name</label>
-                            <input type="text" name="namme" id="name" class="nameEmail" placeholder="your name here" required>
+                            <input id="input" type="text" name="name" class="nameEmail" placeholder="your name here" required>
     
                             <label for="email" class="sr-only">email</label>
-                            <input type="email" id="email" name="email" class="nameEmail" placeholder="your email here" required>
+                            <input id="input" type="email" id="email" name="email" class="nameEmail" placeholder="your email here" required>
                             
                             <label for="message" class="sr-only">message</label>
                             <textarea id="message" name="message" cols="30" rows="10"></textarea>
     
-                            <button>submit</button>
+                            <button type="submit" id="myFormButton">submit</button>
+
+                            <p id="myFormStatus" class="formStatus"></p>
                         </form>
                     </div>
                 </div>
@@ -283,6 +285,12 @@
         
     </main>
     <footer>
+        <div class="topLink">
+            <a href="#home">
+                <span class="material-symbols-outlined">arrow_circle_up</span>
+                <p>Scroll to Top</p>
+            </a>
+        </div>
         <div class="wrapper">
             <p class="buildBy">Built by Paridhi Shah</p>
             <div class="version">
@@ -294,7 +302,8 @@
                    
         </div>
     </footer>
-    <!-- <script src="./scripts.js/main.js" type="module"></script> -->
+    <script src="./scripts.js/main.js" type="module"></script>
 </body>
 </html>
-<!-- colour palette inspiration from www.brittanychiang.com/ -->
+<!-- Special Credits to Brittany Chiang for colour palette inspiration from www.brittanychiang.com/ -->
+<!-- Spcial Credits to Tofajjal Hossen for the header animation https://codepen.io/Md-Tofajjal-Hossen/pen/rNVVXbE -->

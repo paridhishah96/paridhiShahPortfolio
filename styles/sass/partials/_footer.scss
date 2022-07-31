@@ -1,6 +1,9 @@
 footer {
     margin-top: 50px;
     font-family: $headings;
+    .topLink {
+        text-align: center;
+    }
     .wrapper {
         padding: .5rem 0;
         display: flex;
