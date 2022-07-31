@@ -10,6 +10,12 @@ body {
     color: $slate;
 }
 
+.logo {
+    font-family: $logo;
+    font-size: 1.5rem;
+    margin-left: 1.6vw;
+}
+
 h1, h2, h3, h4 {
     font-family: $headings;
     color: $white;

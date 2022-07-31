@@ -3,6 +3,20 @@ footer {
     font-family: $headings;
     .topLink {
         text-align: center;
+        display: flex;
+        justify-content: center;
+        a {
+            display: block;
+            width: fit-content;
+            border: $accentThree solid 1px;
+            border-radius: 5px;
+            color: $accentThree;
+            padding: 0.5rem;
+            transition: background-color 0.2s ease-in;
+            &:hover, &:focus {
+                background-color: rgba($color: $accentThree, $alpha: 0.2);
+            }
+        }
     }
     .wrapper {
         padding: .5rem 0;

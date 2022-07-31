@@ -236,6 +236,12 @@ body {
   color: #ccd6f6;
 }
 
+.logo {
+  font-family: "Syne", sans-serif;
+  font-size: 1.5rem;
+  margin-left: 1.6vw;
+}
+
 h1, h2, h3, h4 {
   font-family: "Nunito", sans-serif;
   color: #ffffff;
@@ -1583,6 +1589,27 @@ footer {
 }
 footer .topLink {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .topLink a {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: #64ffda solid 1px;
+  border-radius: 5px;
+  color: #64ffda;
+  padding: 0.5rem;
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+footer .topLink a:hover, footer .topLink a:focus {
+  background-color: rgba(100, 255, 218, 0.2);
 }
 footer .wrapper {
   padding: 0.5rem 0;
