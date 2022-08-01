@@ -6,7 +6,7 @@ main {
     }
     .fadeIn {
         opacity: 0;
-        transition: opacity 1s cubic-bezier(1,0,1,.91) ;
+        transition: opacity 0.4s cubic-bezier(1,0,1,.91) ;
     }
     .fadeIn.appear {
         opacity: 1;

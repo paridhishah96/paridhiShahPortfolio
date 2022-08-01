@@ -479,8 +479,8 @@ main .srNumber {
 }
 main .fadeIn {
   opacity: 0;
-  -webkit-transition: opacity 1s cubic-bezier(1, 0, 1, 0.91);
-  transition: opacity 1s cubic-bezier(1, 0, 1, 0.91);
+  -webkit-transition: opacity 0.4s cubic-bezier(1, 0, 1, 0.91);
+  transition: opacity 0.4s cubic-bezier(1, 0, 1, 0.91);
 }
 main .fadeIn.appear {
   opacity: 1;
