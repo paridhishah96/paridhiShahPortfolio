@@ -4,6 +4,12 @@
         width: 85%;
     }
 
+    header {
+        // changing position and size of background blob to prevent horizontal scroll
+        &::before {
+            left: 15%;
+        }
+    }
 
     // hamburger menu 
     .headerNav {
@@ -86,6 +92,16 @@
 @media (max-width: 600px) {
     .wrapper {
         width: 90%;
+    }
+
+    header {
+        // changing position and size of background blob to prevent horizontal scroll
+        &::before {
+            left: 10%;
+            top: 30%;
+            width: 235px;
+            height: 235px;
+        }
     }
     
     .about {

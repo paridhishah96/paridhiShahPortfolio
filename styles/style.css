@@ -302,6 +302,10 @@ img {
   margin: 0 auto;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(#0a192f), color-stop(#233554), to(#0a192f));
@@ -1685,6 +1689,9 @@ footer .wrapper .version a i:hover, footer .wrapper .version a i:focus {
   .wrapper {
     width: 85%;
   }
+  header::before {
+    left: 15%;
+  }
   .headerNav .defaultNav {
     display: none;
   }
@@ -1757,6 +1764,12 @@ footer .wrapper .version a i:hover, footer .wrapper .version a i:focus {
 @media (max-width: 600px) {
   .wrapper {
     width: 90%;
+  }
+  header::before {
+    left: 10%;
+    top: 30%;
+    width: 235px;
+    height: 235px;
   }
   .about {
     height: auto;
