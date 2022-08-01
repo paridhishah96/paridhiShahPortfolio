@@ -306,6 +306,7 @@ body {
   height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(#0a192f), color-stop(#233554), to(#0a192f));
   background: linear-gradient(90deg, #0a192f, #233554, #0a192f);
+  overflow-x: hidden;
 }
 
 button {
@@ -1691,13 +1692,14 @@ footer .wrapper .version a i:hover, footer .wrapper .version a i:focus {
     display: block;
   }
   .headerNav .slideOutNav {
+    overflow-y: hidden;
     min-width: 100vw;
     height: 100vh;
     position: absolute;
     right: -100vw;
     z-index: 20;
-    -webkit-transition: right 0.4s ease-in-out;
-    transition: right 0.4s ease-in-out;
+    -webkit-transition: right 0.25s ease-in;
+    transition: right 0.25s ease-in;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

@@ -14,13 +14,13 @@
             display: block;
         }
         .slideOutNav {
-            // display: block;
+            overflow-y: hidden;
             min-width: 100vw;
             height: 100vh;
             position: absolute;
             right: -100vw;
             z-index: 20;
-            transition: right 0.4s ease-in-out;
+            transition: right 0.25s ease-in;
             flex-direction: column;
             justify-content: center;
             align-items: center;
