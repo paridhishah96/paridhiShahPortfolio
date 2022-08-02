@@ -302,10 +302,6 @@ img {
   margin: 0 auto;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(#0a192f), color-stop(#233554), to(#0a192f));
@@ -340,7 +336,6 @@ button:hover, button:focus {
 }
 
 .headerNav {
-  z-index: 10;
   height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,7 +347,10 @@ button:hover, button:focus {
       -ms-flex-align: center;
           align-items: center;
 }
-.headerNav .hamburgerNav {
+.headerNav .navIcon {
+  display: none;
+}
+.headerNav .hideNav {
   display: none;
 }
 .headerNav ul {
@@ -739,6 +737,26 @@ main .fadeIn.appear {
 }
 .contact .wrapper .hobbiesAndForm .contactForm form textarea {
   resize: none;
+}
+.contact .wrapper .hobbiesAndForm .contactForm form textarea::-webkit-input-placeholder {
+  text-align: center;
+  color: rgba(10, 25, 47, 0.8);
+}
+.contact .wrapper .hobbiesAndForm .contactForm form textarea::-moz-placeholder {
+  text-align: center;
+  color: rgba(10, 25, 47, 0.8);
+}
+.contact .wrapper .hobbiesAndForm .contactForm form textarea:-ms-input-placeholder {
+  text-align: center;
+  color: rgba(10, 25, 47, 0.8);
+}
+.contact .wrapper .hobbiesAndForm .contactForm form textarea::-ms-input-placeholder {
+  text-align: center;
+  color: rgba(10, 25, 47, 0.8);
+}
+.contact .wrapper .hobbiesAndForm .contactForm form textarea::placeholder {
+  text-align: center;
+  color: rgba(10, 25, 47, 0.8);
 }
 .contact .wrapper .hobbiesAndForm .contactForm form .success {
   text-align: center;
@@ -1692,21 +1710,35 @@ footer .wrapper .version a i:hover, footer .wrapper .version a i:focus {
   header::before {
     left: 15%;
   }
+  .headerNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .headerNav .defaultNav {
     display: none;
   }
-  .headerNav .hamburgerNav {
+  .headerNav .navIcon {
     display: block;
+    cursor: pointer;
   }
-  .headerNav .slideOutNav {
-    overflow-y: hidden;
-    min-width: 100vw;
+  .headerNav .hamburgerNav {
+    -webkit-transition: right 0.3s ease-in-out;
+    transition: right 0.3s ease-in-out;
+  }
+  .headerNav .hamburgerNav .hideNav {
+    display: none;
+  }
+  .headerNav .showNav {
+    width: 100vw;
     height: 100vh;
-    position: absolute;
-    right: -100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
     z-index: 20;
-    -webkit-transition: right 0.25s ease-in;
-    transition: right 0.25s ease-in;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1717,42 +1749,21 @@ footer .wrapper .version a i:hover, footer .wrapper .version a i:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: -webkit-gradient(linear, left top, right top, from(#0a192f), color-stop(#233554), to(#0a192f));
-    background: linear-gradient(90deg, #0a192f, #233554, #0a192f);
+    background-color: #0a192f;
   }
-  .headerNav .slideOutNav li {
-    font-size: 2rem;
-    padding: 2rem 0;
-  }
-  .headerNav .slideOutNav li a {
-    -webkit-transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
-  }
-  .headerNav .slideOutNav li a:hover, .headerNav .slideOutNav li a:focus {
-    color: #64ffda;
-    font-size: 2.5rem;
-    outline: none;
-  }
-  .trigger:checked ~ .slideOutNav {
-    right: 0;
-  }
-  .hamburgerNav {
-    position: relative;
-  }
-  .hamburgerNav .material-symbols-outlined {
-    font-size: 2rem;
-    padding-right: 1rem;
-  }
-  .hamburgerNav .trigger {
+  .headerNav .showNav button {
     position: absolute;
-    top: 3px;
-    right: 15px;
-    opacity: 0;
+    right: 10px;
+    top: 10px;
   }
-  .hamburgerNav input[type=checkbox] {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
+  .headerNav .showNav li {
+    padding: 0.3rem 0;
+  }
+  .headerNav .showNav li a {
+    color: #112240;
+  }
+  .headerNav .showNav li a span {
+    color: #233554;
   }
   .projects ul .projectBox {
     display: block;

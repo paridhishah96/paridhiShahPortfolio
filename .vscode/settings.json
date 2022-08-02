@@ -14,5 +14,19 @@
     "liveSassCompile.settings.autoprefix": [
       "> 1%",
       "last 2 versions"
+    ],
+    "cSpell.words": [
+      "Paridhi"
+    ],
+    "cSpell.ignoreWords": [
+      "Calendly",
+      "Chiang",
+      "Gourlay",
+      "Hossen",
+      "Spoonacular",
+      "Tofajjal",
+      "brittanychiang",
+      "devicons",
+      "jsdelivr"
     ]
   }

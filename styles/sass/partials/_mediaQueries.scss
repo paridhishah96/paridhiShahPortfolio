@@ -13,66 +13,54 @@
 
     // hamburger menu 
     .headerNav {
+        
+        
+        display: flex;
+        justify-content: space-between;
         .defaultNav {
             display: none;
         }
-        .hamburgerNav {
+        .navIcon {
             display: block;
+            cursor: pointer;
         }
-        .slideOutNav {
-            overflow-y: hidden;
-            min-width: 100vw;
+        .hamburgerNav {            
+            transition: right 0.3s ease-in-out;
+            .hideNav {
+                display: none;
+            }
+            
+        }
+        .showNav {
+            width: 100vw;
             height: 100vh;
-            position: absolute;
-            right: -100vw;
+            position: fixed;
+            top: 0;
+            right: 0;
             z-index: 20;
-            transition: right 0.25s ease-in;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(90deg,$primary,$accentTwo,$primary);
+            background-color: $primary;
+            button {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
             li {
-                font-size: 2rem;
-                padding: 2rem 0;
+                // font-size: 2rem;
+                padding: 0.3rem 0;
                 a {
-                    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
-                        &:hover, &:focus {
-                            color: $accentThree;
-                            font-size: 2.5rem;
-                            outline: none;
-                        }
+                    color: $accentOne;
+                    span {
+                        color: $accentTwo;
+                    }
                 }
             }
         }
-    }
-    
-    
-    .trigger:checked ~ .slideOutNav {
-        right: 0;
-    }
-    
-    .hamburgerNav {
-        position: relative;
-        .material-symbols-outlined {
-            font-size: 2rem;
-            padding-right: 1rem;
-        }
-        .trigger {
-            position: absolute;
-            top: 3px;
-            right: 15px;
-            opacity: 0;
-        }
-    
-        input[type=checkbox] {
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-        }
-        
         
     }
-
+   
     .projects {
         ul {
             .projectBox {

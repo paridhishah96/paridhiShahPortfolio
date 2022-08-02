@@ -9,16 +9,13 @@ img {
     margin: 0 auto;
 }
 
-html {
-  overflow-x: hidden; 
-}
-
 body {
   height: 100vh;
   background: linear-gradient(90deg,$primary,$accentTwo,$primary);
   overflow-x: hidden; 
 
 }
+
 
 // DRYing out the code - button used in header/footer
 button {

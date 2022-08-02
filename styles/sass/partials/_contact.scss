@@ -35,6 +35,10 @@
                     }
                     textarea {
                         resize: none;
+                        &::placeholder {
+                            text-align: center;
+                            color: rgba($color: $primary, $alpha: 0.8);
+                        }
                     }
                     .success {
                         text-align: center;

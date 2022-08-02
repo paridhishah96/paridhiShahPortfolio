@@ -1,11 +1,14 @@
 .headerNav {
-    z-index: 10;
     height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .hamburgerNav {
+    .navIcon {
         display: none;
+    }
+    .hideNav {
+        display: none;
+
     }
     ul {
         display: flex;

@@ -7,7 +7,7 @@
     <title>Paridhi Shah</title>
 
     <!-- Icons -->
-    <link rel="stylesheet" href="./styles/devicons.css">
+    <!-- <link rel="stylesheet" href="./styles/devicons.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/319714ae3d.js" crossorigin="anonymous"></script>
@@ -28,10 +28,16 @@
   
     <nav class="headerNav" id="headerNav">
         <a href="./index.html" id="logo" class="logo">ps.</a>
-        <div class="hamburgerNav">
+        <div class="navIcon" aria-label="Open Menu">
             <span class="material-symbols-outlined navIcon">menu</span>
-            <input type="checkbox" id="trigger" class="trigger">
-            <ul class="slideOutNav">
+        </div>
+        <div class="hamburgerNav" >
+            <ul class="hideNav" id="slideOutNav">
+                <li>
+                    <button id="closeButton">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+                </li>
                 <li>
                     <a href="#home"><span class="srNumber">01.</span>home</a>
                 </li>
@@ -49,7 +55,7 @@
                 </li>
             </ul>
         </div>
-        <div class="defaultNav">
+        <div class="defaultNav showDefaultNav">
             <ul>
                 <li>
                     <a href="#home"><span class="srNumber">01.</span>home</a>
@@ -105,7 +111,7 @@
                 <i class="fa-brands fa-github"></i>
             </a>
             <a href="https://calendly.com/paridhishahcodes" target="_blank">
-                <span class="sr-only">Link of my Calendly to look at my availabilty</span>
+                <span class="sr-only">Link of my Calendly to look at my availability</span>
                 <i class="fa-solid fa-calendar-days"></i>
             </a>
             <a href="https://medium.com/@paridhishah96 "target="_blank">
@@ -122,7 +128,7 @@
                 </div>
                 <div class="skillList" id="skillList">
                     <ul>
-                        <!-- HTML5, CSS, SCSS/SASS, JS/ES6, JQUERY, REST APIs/ AJAX, REACT, FIREBASE, GIT, Terminal, Resp Des, Accesibility, Paired programming, Proj Management, SQL, Python -->
+                        <!-- HTML5, CSS, SCSS/SASS, JS/ES6, JQUERY, REST APIs/ AJAX, REACT, FIREBASE, GIT, Terminal, Resp Des, Accessibility, Paired programming, Proj Management, SQL, Python -->
                         <li>        
                             <span class="devicons devicons-html5"></span>
                             <p>HTML5</p>
@@ -217,8 +223,8 @@
                                     </ul>
                                 </div>
                                 <div class="projLinks">
-                                    <a href="https://recipe-generator-nick-paridhi.netlify.app/" class="liveLink">Live Site</a>
-                                    <a href="https://github.com/recipeGeneratorNickParidhi/recipeGenerator" class="gitLink">GitHub Repo</a>
+                                    <a target="_blank" href="https://recipe-generator-nick-paridhi.netlify.app/" class="liveLink">Live Site</a>
+                                    <a target="_blank" href="https://github.com/recipeGeneratorNickParidhi/recipeGenerator" class="gitLink">GitHub Repo</a>
                                 </div>
                             </div>
                         </li>
@@ -241,8 +247,8 @@
                                     </ul>
                                 </div>
                                 <div class="projLinks">
-                                    <a href="https://project-one-paridhi-creative.netlify.app/" class="liveLink">Live Site</a>
-                                    <a href="https://github.com/paridhishah96/paridhiShahProjectOne" class="gitLink">GitHub Repo</a>
+                                    <a target="_blank" href="https://project-one-paridhi-creative.netlify.app/" class="liveLink">Live Site</a>
+                                    <a target="_blank" href="https://github.com/paridhishah96/paridhiShahProjectOne" class="gitLink">GitHub Repo</a>
                                 </div>
                             </div>
                         </li>
@@ -317,7 +323,7 @@
                             <input id="input" type="email" id="email" name="email" class="nameEmail" placeholder="your email here" required>
                             
                             <label for="message" class="sr-only">message</label>
-                            <textarea id="message" name="message" cols="30" rows="10"></textarea>
+                            <textarea id="message" name="message" cols="30" rows="10" placeholder="your message here"></textarea>
     
                             <button type="submit" id="myFormButton">submit</button>
 
@@ -338,7 +344,7 @@
             <i class="fa-brands fa-github"></i>
         </a>
         <a href="https://calendly.com/paridhishahcodes" target="_blank">
-            <span class="sr-only">Link of my Calendly to look at my availabilty</span>
+            <span class="sr-only">Link of my Calendly to look at my availability</span>
             <i class="fa-solid fa-calendar-days"></i>
         </a>
         <a href="https://medium.com/@paridhishah96 "target="_blank">
@@ -367,5 +373,6 @@
     <script src="./scripts.js/main.js" type="module"></script>
 </body>
 </html>
-<!-- Special Credits to Brittany Chiang for colour palette inspiration from www.brittanychiang.com/ -->
-<!-- Spcial Credits to Tofajjal Hossen for the header animation https://codepen.io/Md-Tofajjal-Hossen/pen/rNVVXbE -->
+<!-- Special Credits to Brittany Chiang for color palette inspiration from 
+    www.brittanychiang.com/ -->
+<!-- Special Credits to Tofajjal Hossen for the header animation https://codepen.io/Md-Tofajjal-Hossen/pen/rNVVXbE -->
