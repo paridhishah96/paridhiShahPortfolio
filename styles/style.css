@@ -1764,7 +1764,6 @@ footer .wrapper .version a i:hover, footer .wrapper .version a i:focus {
     display: block;
     cursor: pointer;
     padding: 0.4rem;
-    border: solid white 1px;
   }
   .headerNav .hamburgerNav {
     width: 100vw;
