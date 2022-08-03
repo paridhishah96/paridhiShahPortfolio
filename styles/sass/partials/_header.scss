@@ -49,11 +49,12 @@ header {
         .slogan {
             color: rgba($color: $white, $alpha: 0.7);
         }
-        button {
-            margin-top: 2rem;
+        a {
+            display: inline-block;
             border: $accentThree solid 1px;
             border-radius: 5px;
             color: $accentThree;
+            margin: 1rem 0.5rem 0 0;
             padding: 0.5rem 1rem;
             transition: background-color 0.2s ease-in;
             &:hover, &:focus {

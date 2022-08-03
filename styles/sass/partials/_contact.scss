@@ -32,14 +32,15 @@
                         padding: 0.5rem 1rem 0.5rem 0.25rem;
                         outline: none;
                         &::placeholder {
-                            text-align: center;
+                            text-align: left;
                             color: rgba($color: $primary, $alpha: 0.8);
                         }
                     }
                     textarea {
                         resize: none;
                         &::placeholder {
-                            text-align: center;
+                            text-align: left;
+                            padding-left: 0.25rem;
                             color: rgba($color: $primary, $alpha: 0.8);
                         }
                     }

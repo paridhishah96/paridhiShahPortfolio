@@ -461,16 +461,17 @@ header .heading .intro {
 header .heading .slogan {
   color: rgba(255, 255, 255, 0.7);
 }
-header .heading button {
-  margin-top: 2rem;
+header .heading a {
+  display: inline-block;
   border: #64ffda solid 1px;
   border-radius: 5px;
   color: #64ffda;
+  margin: 1rem 0.5rem 0 0;
   padding: 0.5rem 1rem;
   -webkit-transition: background-color 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
-header .heading button:hover, header .heading button:focus {
+header .heading a:hover, header .heading a:focus {
   background-color: rgba(100, 255, 218, 0.2);
 }
 
@@ -732,46 +733,51 @@ main .fadeIn.appear {
   outline: none;
 }
 .contact .wrapper .hobbiesAndForm .contactForm form input::-webkit-input-placeholder {
-  text-align: center;
+  text-align: left;
   color: rgba(10, 25, 47, 0.8);
 }
 .contact .wrapper .hobbiesAndForm .contactForm form input::-moz-placeholder {
-  text-align: center;
+  text-align: left;
   color: rgba(10, 25, 47, 0.8);
 }
 .contact .wrapper .hobbiesAndForm .contactForm form input:-ms-input-placeholder {
-  text-align: center;
+  text-align: left;
   color: rgba(10, 25, 47, 0.8);
 }
 .contact .wrapper .hobbiesAndForm .contactForm form input::-ms-input-placeholder {
-  text-align: center;
+  text-align: left;
   color: rgba(10, 25, 47, 0.8);
 }
 .contact .wrapper .hobbiesAndForm .contactForm form input::placeholder {
-  text-align: center;
+  text-align: left;
   color: rgba(10, 25, 47, 0.8);
 }
 .contact .wrapper .hobbiesAndForm .contactForm form textarea {
   resize: none;
 }
 .contact .wrapper .hobbiesAndForm .contactForm form textarea::-webkit-input-placeholder {
-  text-align: center;
+  text-align: left;
+  padding-left: 0.25rem;
   color: rgba(10, 25, 47, 0.8);
 }
 .contact .wrapper .hobbiesAndForm .contactForm form textarea::-moz-placeholder {
-  text-align: center;
+  text-align: left;
+  padding-left: 0.25rem;
   color: rgba(10, 25, 47, 0.8);
 }
 .contact .wrapper .hobbiesAndForm .contactForm form textarea:-ms-input-placeholder {
-  text-align: center;
+  text-align: left;
+  padding-left: 0.25rem;
   color: rgba(10, 25, 47, 0.8);
 }
 .contact .wrapper .hobbiesAndForm .contactForm form textarea::-ms-input-placeholder {
-  text-align: center;
+  text-align: left;
+  padding-left: 0.25rem;
   color: rgba(10, 25, 47, 0.8);
 }
 .contact .wrapper .hobbiesAndForm .contactForm form textarea::placeholder {
-  text-align: center;
+  text-align: left;
+  padding-left: 0.25rem;
   color: rgba(10, 25, 47, 0.8);
 }
 .contact .wrapper .hobbiesAndForm .contactForm form .success {
@@ -1822,6 +1828,9 @@ footer .wrapper .version a i:hover, footer .wrapper .version a i:focus {
   .headerNav .showNav {
     -webkit-transform: none;
             transform: none;
+  }
+  .backToTop {
+    display: none;
   }
   .projects ul .projectBox {
     display: block;
