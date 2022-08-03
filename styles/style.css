@@ -827,6 +827,24 @@ main .fadeIn.appear {
   display: none;
 }
 
+.backToTop {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+}
+.backToTop a span {
+  color: #ccd6f6;
+  font-size: 2.5rem;
+  padding-bottom: 0.8rem;
+  position: relative;
+  top: 0;
+  -webkit-transition: color ease 0.3s;
+  transition: color ease 0.3s;
+}
+.backToTop a span:hover, .backToTop a span:focus {
+  color: #64ffda;
+}
+
 .socialIcons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -839,7 +857,7 @@ main .fadeIn.appear {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  top: 60%;
+  bottom: 0;
   left: 2%;
 }
 .socialIcons::after {
@@ -1778,27 +1796,25 @@ footer .wrapper .version a i:hover, footer .wrapper .version a i:focus {
         -ms-flex-align: center;
             align-items: center;
   }
-  .headerNav .hamburgerNav ul button {
+  .headerNav .hamburgerNav ul .closeButton {
     position: absolute;
     right: 0.55rem;
     top: 1.5vh;
-    margin-top: 0;
-    border: none;
-    border-radius: 5px;
     color: #ccd6f6;
-    padding: 0.5rem;
-    -webkit-transition: background-color 0.2s ease-in;
-    transition: background-color 0.2s ease-in;
-  }
-  .headerNav .hamburgerNav ul button:hover, .headerNav .hamburgerNav ul button:focus {
-    background-color: rgba(100, 255, 218, 0.2);
+    cursor: pointer;
+    padding: 0.3rem;
   }
   .headerNav .hamburgerNav ul li {
     font-size: 2rem;
     padding: 0.3rem 0;
   }
   .headerNav .hamburgerNav ul li a {
-    color: #ffffff;
+    -webkit-transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  }
+  .headerNav .hamburgerNav ul li a:hover, .headerNav .hamburgerNav ul li a:focus {
+    color: #64ffda;
+    font-size: 2.5rem;
   }
   .headerNav .hamburgerNav ul li a span {
     color: #64ffda;

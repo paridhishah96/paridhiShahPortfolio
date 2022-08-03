@@ -87,6 +87,28 @@
     display: none;
 }
 
+
+// fixed on the right of the page on bigger screens
+
+.backToTop {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    a {
+        span {
+            color: $slate;
+            font-size: 2.5rem;
+            padding-bottom: 0.8rem;
+            position: relative;
+            top: 0;
+            transition: color ease 0.3s;
+            &:hover, &:focus {
+                color: $accentThree;
+            }
+        }
+    }
+}
+
 // fixed on the left of the page on bigger screens
 
 .socialIcons {
@@ -94,7 +116,7 @@
     flex-direction: column;
     align-items: center;
     position: fixed;
-    top: 60%;
+    bottom: 0;
     left: 2%;
     &::after {
         content: "";

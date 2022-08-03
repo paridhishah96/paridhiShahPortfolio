@@ -40,25 +40,23 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                button {
+                .closeButton {
                     position: absolute;
                     right: 0.55rem;
                     top: 1.5vh;
-                    margin-top: 0;
-                    border: none;
-                    border-radius: 5px;
                     color: $slate;
-                    padding: 0.5rem;
-                    transition: background-color 0.2s ease-in;
-                    &:hover, &:focus {
-                    background-color: rgba($color: $accentThree, $alpha: 0.2);
-                    }
+                    cursor: pointer;
+                    padding: 0.3rem;
                 }
                 li {
                     font-size: 2rem;
                     padding: 0.3rem 0;
                     a {
-                        color: $white;
+                        transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+                        &:hover, &:focus {
+                            color: $accentThree;
+                            font-size: 2.5rem;
+                        }
                         span {
                             color: $accentThree;
                         }
@@ -165,9 +163,6 @@
         .wrapper {
             .hobbiesAndForm {
                 flex-direction: column;
-                // .hobbies {
-                    
-                // }
             }
         }
     }
