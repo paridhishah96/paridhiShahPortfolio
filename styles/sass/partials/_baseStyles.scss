@@ -9,6 +9,10 @@ img {
     margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   background: linear-gradient(90deg,$primary,$accentTwo,$primary);

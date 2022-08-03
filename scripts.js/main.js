@@ -6,22 +6,18 @@ import { faders, appearOnScroll } from "./fadeModule.js";
 
 const navEl = document.querySelector("#slideOutNav");
 const hamIcon = document.querySelector(".navIcon");
-const closeIcon = document.querySelector("#closeButton")
 
 
 hamIcon.addEventListener("click", () => {
-    if (navEl.classList.contains("hideNav") ) {
-        navEl.classList.replace("hideNav", "showNav")
-    } else {
-        return
-    }
+    navEl.classList.toggle("showNav")
 })
 
-closeIcon.addEventListener("click", () => {
-    if (navEl.classList.contains("showNav") ) {
-        navEl.classList.replace("showNav", "hideNav")
-    } else {
+navEl.addEventListener("click", (e) => {
+    console.log(e.target)
+    if (e.target.id === "slideOutNav"){
         return
+    } else {
+        navEl.classList.toggle("showNav")
     }
 })
 

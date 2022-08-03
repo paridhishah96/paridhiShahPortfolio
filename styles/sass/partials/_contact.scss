@@ -1,5 +1,8 @@
 .contact {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .wrapper {
         .contactInfo {
             text-align: center;
@@ -9,9 +12,9 @@
         }
         .hobbiesAndForm {
             display: flex;
-            // justify-content: space-between;
+            justify-content: space-between;
             .hobbies {
-                flex-basis: 45%;
+                flex-basis: 48%;
                 p {
                     padding-bottom: 1rem;
                     span {
@@ -101,16 +104,17 @@
         margin: 0 auto;
         background-color: $accentThree;
     }
-    i {
-        color: $slate;
-        font-size: 1.1rem;
-        padding-bottom: 0.8rem;
-        position: relative;
-        top: 0;
-        transition: top ease 0.3s, color ease 0.3s;
-        &:hover, &:focus {
-            color: $accentThree;
-            top: -5px;
+    a {
+        i {
+            color: $slate;
+            font-size: 1.1rem;
+            padding-bottom: 0.8rem;
+            position: relative;
+            top: 0;
+            transition: color ease 0.3s;
+            &:hover, &:focus {
+                color: $accentThree;
+            }
         }
     }
 }

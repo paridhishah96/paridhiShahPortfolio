@@ -302,6 +302,10 @@ img {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(#0a192f), color-stop(#233554), to(#0a192f));
@@ -350,7 +354,7 @@ button:hover, button:focus {
 .headerNav .navIcon {
   display: none;
 }
-.headerNav .hideNav {
+.headerNav .hamburgerNav {
   display: none;
 }
 .headerNav ul {
@@ -675,6 +679,15 @@ main .fadeIn.appear {
 
 .contact {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .contact .wrapper .contactInfo {
   text-align: center;
@@ -686,10 +699,13 @@ main .fadeIn.appear {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .contact .wrapper .hobbiesAndForm .hobbies {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
 }
 .contact .wrapper .hobbiesAndForm .hobbies p {
   padding-bottom: 1rem;
@@ -834,18 +850,17 @@ main .fadeIn.appear {
   margin: 0 auto;
   background-color: #64ffda;
 }
-.socialIcons i {
+.socialIcons a i {
   color: #ccd6f6;
   font-size: 1.1rem;
   padding-bottom: 0.8rem;
   position: relative;
   top: 0;
-  -webkit-transition: top ease 0.3s, color ease 0.3s;
-  transition: top ease 0.3s, color ease 0.3s;
+  -webkit-transition: color ease 0.3s;
+  transition: color ease 0.3s;
 }
-.socialIcons i:hover, .socialIcons i:focus {
+.socialIcons a i:hover, .socialIcons a i:focus {
   color: #64ffda;
-  top: -5px;
 }
 
 /*!
@@ -1724,21 +1739,34 @@ footer .wrapper .version a i:hover, footer .wrapper .version a i:focus {
   .headerNav .navIcon {
     display: block;
     cursor: pointer;
+    margin-right: 1.6vw;
   }
   .headerNav .hamburgerNav {
-    -webkit-transition: right 0.3s ease-in-out;
-    transition: right 0.3s ease-in-out;
-  }
-  .headerNav .hamburgerNav .hideNav {
-    display: none;
-  }
-  .headerNav .showNav {
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 20;
+    background-color: #0a192f;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: left;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  }
+  .headerNav .hamburgerNav ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1749,21 +1777,35 @@ footer .wrapper .version a i:hover, footer .wrapper .version a i:focus {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: #0a192f;
   }
-  .headerNav .showNav button {
+  .headerNav .hamburgerNav ul button {
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 0.55rem;
+    top: 1.5vh;
+    margin-top: 0;
+    border: none;
+    border-radius: 5px;
+    color: #ccd6f6;
+    padding: 0.5rem;
+    -webkit-transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
   }
-  .headerNav .showNav li {
+  .headerNav .hamburgerNav ul button:hover, .headerNav .hamburgerNav ul button:focus {
+    background-color: rgba(100, 255, 218, 0.2);
+  }
+  .headerNav .hamburgerNav ul li {
+    font-size: 2rem;
     padding: 0.3rem 0;
   }
-  .headerNav .showNav li a {
-    color: #112240;
+  .headerNav .hamburgerNav ul li a {
+    color: #ffffff;
   }
-  .headerNav .showNav li a span {
-    color: #233554;
+  .headerNav .hamburgerNav ul li a span {
+    color: #64ffda;
+  }
+  .headerNav .showNav {
+    -webkit-transform: none;
+            transform: none;
   }
   .projects ul .projectBox {
     display: block;
