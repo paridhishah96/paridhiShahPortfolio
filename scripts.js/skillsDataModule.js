@@ -36,8 +36,8 @@ const skillsList = [
         description: "GitHub"
     },
     {
-        icon: `<i class="devicon-vscode-plain colored"></i>` ,
-        description: "VS Code Editor"
+        icon: `<span class="devicons devicons-nodejs_small"></span>` ,
+        description: "Node.js"
     },
     {
         icon: `<span class="devicons devicons-responsive"></span>` ,

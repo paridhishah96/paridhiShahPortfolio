@@ -13,14 +13,14 @@
     ul {
         display: flex;
         li {
+            margin: 0 0.25rem;
             a {
-                padding: 1rem;
+                border-radius: 5px;
+                padding: 0.5rem 1rem;
                 color: rgba($color: $white, $alpha: 0.8);
-                transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+                transition: color 0.3s ease-in-out;
                 &:hover, &:focus {
                     color: $accentThree;
-                    font-size: 1.05rem;
-                    outline: none;
                 }
                 span {
                     font-size: 0.7rem;

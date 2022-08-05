@@ -362,16 +362,18 @@ button:hover, button:focus {
   display: -ms-flexbox;
   display: flex;
 }
+.headerNav ul li {
+  margin: 0 0.25rem;
+}
 .headerNav ul li a {
-  padding: 1rem;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
   color: rgba(255, 255, 255, 0.8);
-  -webkit-transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 .headerNav ul li a:hover, .headerNav ul li a:focus {
   color: #64ffda;
-  font-size: 1.05rem;
-  outline: none;
 }
 .headerNav ul li a span {
   font-size: 0.7rem;
@@ -541,6 +543,9 @@ main .fadeIn.appear {
   margin-bottom: 1rem;
   border-bottom: #233554 2px solid;
 }
+.skills .wrapper .skillList {
+  scale: 0;
+}
 .skills .wrapper .skillList ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -579,6 +584,11 @@ main .fadeIn.appear {
 }
 .skills .wrapper .skillList ul li p {
   padding-top: 0.5rem;
+}
+.skills .wrapper .skillList.scaleIn {
+  scale: 1;
+  -webkit-transition: scale 0.4s ease-in;
+  transition: scale 0.4s ease-in;
 }
 
 .projects {

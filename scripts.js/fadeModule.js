@@ -4,8 +4,8 @@ export const faders = document.querySelectorAll(".fadeIn");
 
 
 const appearOptions = {
-    threshold: 1,
-    rootMargin: "0px 0px 50% 0px"
+    threshold: 0,
+    rootMargin: "0px 0px -40% 0px"
 };
 export const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
     entries.forEach (entry => {

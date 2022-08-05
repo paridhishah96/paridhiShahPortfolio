@@ -11,6 +11,8 @@ main {
     .fadeIn.appear {
         opacity: 1;
     }
+    
+    
 
 }
 
@@ -49,7 +51,9 @@ main {
             margin-bottom: 1rem;
             border-bottom: $accentTwo 2px solid;
         }
+        
         .skillList {
+            scale: 0;
             ul {
                 display: grid;
                 grid-template-columns: repeat(5, 1fr);
@@ -77,6 +81,10 @@ main {
                     }
                 }
             }
+        }
+        .skillList.scaleIn {
+            scale: 1;
+            transition: scale 0.4s ease-in;
         }
     }
 }

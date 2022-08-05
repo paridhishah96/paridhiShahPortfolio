@@ -3,6 +3,7 @@ import { faders, appearOnScroll } from "./fadeModule.js";
 import hamburgerMenu from "./hamburgerMenuModule.js";
 import populateSkills from "./displayDataModule.js";
 import skillsList from "./skillsDataModule.js";
+import { scalers, scaleOnScroll } from "./scaleModule.js";
 
 
 
@@ -18,6 +19,11 @@ function init() {
     // function to fade in certain elements upon scroll
     faders.forEach(fader => {
         appearOnScroll.observe(fader);
+    });
+
+    // functions to scale up the skill list upon scroll
+    scalers.forEach(scaler => {
+        scaleOnScroll.observe(scaler);
     });
 
     // event listener that shows either success or error upon form submission
