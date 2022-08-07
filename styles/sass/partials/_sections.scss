@@ -1,9 +1,12 @@
 main {
+    // styling for the serial numbers spread over all sections
     .srNumber {
         font-size: 1rem;
         color: rgba($color: $accentThree, $alpha: 0.6);
         padding-right: 0.5rem;
     }
+
+    // styling for intersectionObservers
     .fadeIn {
         opacity: 0;
         transition: opacity 0.4s cubic-bezier(1,0,1,.91) ;
@@ -12,8 +15,6 @@ main {
         opacity: 1;
     }
     
-    
-
 }
 
 .about {

@@ -2,8 +2,8 @@ export const scalers = document.querySelectorAll("#skillList");
 
 
 const appearOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px -40% 0px"
+    threshold: 0.5,
+    rootMargin: "0px"
 };
 export const scaleOnScroll = new IntersectionObserver(function (entries, scaleOnScroll) {
     entries.forEach (entry => {

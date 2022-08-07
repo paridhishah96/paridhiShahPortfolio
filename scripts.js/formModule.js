@@ -2,7 +2,7 @@
 
 export const form = document.getElementById("myForm");
 const input = document.getElementById("input");
-// defining the function that will return either errorr or success
+// defining the function that will return either error or success
 export async function handleSubmit(event) {
     event.preventDefault(); //making sure the form page does not load the formspree website
     input.textContent = ""; //clearing the input once form is submitted

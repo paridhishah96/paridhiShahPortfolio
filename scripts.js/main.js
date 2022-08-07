@@ -21,7 +21,7 @@ function init() {
         appearOnScroll.observe(fader);
     });
 
-    // functions to scale up the skill list upon scroll
+    // function to scale up the skill list upon scroll
     scalers.forEach(scaler => {
         scaleOnScroll.observe(scaler);
     });
