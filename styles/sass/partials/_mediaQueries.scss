@@ -14,7 +14,11 @@
     // hamburger menu 
     .headerNav {     
         display: flex;
-        justify-content: space-between;
+        position: fixed;
+        z-index: 30;
+        background: linear-gradient(90deg,$primary,$accentTwo,$primary);
+        width: 100%;
+        box-shadow: 0px 0 10px 0px $slate;
         .defaultNav {
             display: none;
         }
