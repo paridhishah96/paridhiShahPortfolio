@@ -482,14 +482,6 @@ main .srNumber {
   color: rgba(100, 255, 218, 0.6);
   padding-right: 0.5rem;
 }
-main .fadeIn {
-  opacity: 0;
-  -webkit-transition: opacity 0.4s cubic-bezier(1, 0, 1, 0.91);
-  transition: opacity 0.4s cubic-bezier(1, 0, 1, 0.91);
-}
-main .fadeIn.appear {
-  opacity: 1;
-}
 
 .about {
   height: 100vh;
@@ -543,9 +535,6 @@ main .fadeIn.appear {
   margin-bottom: 1rem;
   border-bottom: #233554 2px solid;
 }
-.skills .wrapper .skillList {
-  scale: 0;
-}
 .skills .wrapper .skillList ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -584,11 +573,6 @@ main .fadeIn.appear {
 }
 .skills .wrapper .skillList ul li p {
   padding-top: 0.5rem;
-}
-.skills .wrapper .skillList.scaleIn {
-  scale: 1;
-  -webkit-transition: scale 0.4s ease-in;
-  transition: scale 0.4s ease-in;
 }
 
 .projects {

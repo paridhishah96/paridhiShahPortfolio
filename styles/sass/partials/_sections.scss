@@ -5,15 +5,6 @@ main {
         color: rgba($color: $accentThree, $alpha: 0.6);
         padding-right: 0.5rem;
     }
-
-    // styling for intersectionObservers
-    .fadeIn {
-        opacity: 0;
-        transition: opacity 0.4s cubic-bezier(1,0,1,.91) ;
-    }
-    .fadeIn.appear {
-        opacity: 1;
-    }
     
 }
 
@@ -54,7 +45,6 @@ main {
         }
         
         .skillList {
-            scale: 0;
             ul {
                 display: grid;
                 grid-template-columns: repeat(5, 1fr);
@@ -82,10 +72,6 @@ main {
                     }
                 }
             }
-        }
-        .skillList.scaleIn {
-            scale: 1;
-            transition: scale 0.4s ease-in;
         }
     }
 }

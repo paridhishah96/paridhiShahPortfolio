@@ -10,7 +10,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png">
     <!-- Icons -->
-    <!-- <link rel="stylesheet" href="./styles/devicons.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/319714ae3d.js" crossorigin="anonymous"></script>
@@ -21,6 +20,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,700&family=Syne&display=swap" rel="stylesheet"> 
+
+    <!-- animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- SASS/CSS style sheet -->
     <link rel="stylesheet" href="./styles/style.css">
@@ -93,10 +95,10 @@
     <main id="mainContent">
         <section class="about " id="about">
             <div class="wrapper">
-                <div class="imgContainer fadeIn">
-                    <img src="./assets/aboutImage.jpg" alt="Paridhi (my) picture sitting in front of a music wall">
+                <div  class="imgContainer" data-aos="fade-right">
+                    <img src="./assets/aboutImage.jpg" alt="Paridhi (my) picture sitting in front of a music wallpaper">
                 </div>
-                <div class="aboutInfo ">
+                <div class="aboutInfo " data-aos="fade-left">
                     <h2><span class="srNumber">02.</span>about me</h2>
                     <p>I am a Front-End Developer with a passion to build engaging, accessible and responsive apps & websites. Previously I worked in customer service, where I developed strong problem solving, logical thinking and communication skills. </p>
                     <p>I carry my fascination for technology into my mindset for coding. My goal is to never stop learning and to continue growing as a person and a dedicated team member.</p>
@@ -129,7 +131,7 @@
                     <h2><span class="srNumber">03.</span>skills</h2>
                     <p>my current tech stack</p>
                 </div>
-                <div class="skillList" id="skillList">
+                <div class="skillList" id="skillList" data-aos="zoom-in">
                     <ul id="skillsUl">
                         <!-- skill list gets appended using JS  -->
                     </ul>
@@ -145,12 +147,12 @@
                 </div>
                 <div class="projectList">
                     <ul>
-                        <li class="projectBox ">
+                        <li class="projectBox " data-aos="slide-up">
                             <div class="imgContainer">
                                 <img src="./assets/projectTwoMockup.png" alt="A showcase of
                                 what my JavaScript project looks like on a laptop screen and a phone screen" class="markup">
                             </div>
-                            <div class="contentContainer fadeIn">
+                            <div class="contentContainer">
                                 <h3>Recipe Generator</h3>
                                 <p class="subHeading">Can't decide what to eat? We got you!</p>
                                 <p class="description">This website uses the Spoonacular API and returns a random recipe from their database on the basis of your preferred cuisine, diet or using the keyword searched by the user. This was a paired project with Nick Gourlay.</p>
@@ -159,7 +161,7 @@
                                     <ul>
                                         <li>JavaScript</li>
                                         <li>SASS</li>
-                                        <li>HTML5</li>
+                                        <li>HTML5</li> 
                                         <li>Git Branching</li>
                                         <li>Paired Programming</li>
                                     </ul>
@@ -170,12 +172,12 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="projectBox">
+                        <li class="projectBox" data-aos="slide-up">
                             <div class="imgContainer">
                                 <img src="./assets/projectOneMockup.png" alt="A showcase of
                                  what my PSD project looks like on a laptop screen and a phone screen" class="markup">
                                 </div>
-                            <div class="contentContainer fadeIn">
+                            <div class="contentContainer">
                                 <h3>Get creative✧</h3>
                                 <p class="subHeading">Your go-to aesthetic blog!</p>
                                 <p class="description">A multi-page responsive and accessible blog website. Creating a pixel-perfect design using the PSD provided, along with some transitions and animations</p>
@@ -252,7 +254,7 @@
                     <p>contact me to discuss my projects or anything tech!</p>
                 </div>
                 <div class="hobbiesAndForm">
-                    <div class="hobbies fadeIn">
+                    <div class="hobbies">
                         <p>I <strong>love</strong> all things food! I am your person if you would like to talk about recipes, an interesting dish or your favorite restaurant. Spoiler alert! I'm vegetarian</p>
                         <p>Learning languages (not programming) is also something that I am passionate about. I am currently <span>trying</span> to learn Mandarin!</p>
                     </div>
@@ -316,6 +318,7 @@
                    
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./scripts.js/main.js" type="module"></script>
 </body>
 </html>
