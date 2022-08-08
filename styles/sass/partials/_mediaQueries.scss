@@ -13,12 +13,7 @@
 
     // hamburger menu 
     .headerNav {     
-        display: flex;
-        position: fixed;
-        z-index: 30;
-        background: linear-gradient(90deg,$primary,$accentTwo,$primary);
-        width: 100%;
-        box-shadow: 0px 0 10px 0px $slate;
+
         .defaultNav {
             display: none;
         }
@@ -74,14 +69,15 @@
         .showNav {
             transform: none;
         }
+
         
     }
-
+    
     .backToTop {
         // the back to top button on the left
         display: none;
     }
-   
+    
     .projects {
         ul {
             .projectBox {
@@ -92,7 +88,16 @@
             }
         }
     }
-
+    
+    .contact {
+        .wrapper {
+            .contactForm {
+                form {
+                    width: 80%;
+                }
+            }
+        }
+    }
     
 
     
@@ -170,8 +175,10 @@
     .contact {
         height: auto;
         .wrapper {
-            .hobbiesAndForm {
-                flex-direction: column;
+            .contactForm {
+                form {
+                    width: 90%;
+                }
             }
         }
     }

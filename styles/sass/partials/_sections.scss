@@ -26,7 +26,11 @@ main {
         .aboutInfo {
             flex-basis: 68%;
             p {
-                padding-bottom: 0.5rem;
+                padding-bottom: 1rem;
+                span {
+                    font-style: italic;
+                    color: $accentThree;
+                }
             }
         }
     }
