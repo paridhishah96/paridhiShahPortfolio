@@ -105,9 +105,9 @@ main {
                 background-size: contain;
                 background-position: center;
                 flex-basis: 55%;
-                transition: scale 0.3s ease-in;
+                transition: scale 0.3s ease-in-out;
                 &:hover {
-                    scale: 1.2;
+                    scale: 1.15;
                 }
             }
             .contentContainer {

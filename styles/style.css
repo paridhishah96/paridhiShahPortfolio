@@ -609,11 +609,11 @@ main .srNumber {
   background-position: center;
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
-  -webkit-transition: scale 0.3s ease-in;
-  transition: scale 0.3s ease-in;
+  -webkit-transition: scale 0.3s ease-in-out;
+  transition: scale 0.3s ease-in-out;
 }
 .projects ul .projectBox .imgContainer:hover {
-  scale: 1.2;
+  scale: 1.15;
 }
 .projects ul .projectBox .contentContainer {
   display: -webkit-box;
