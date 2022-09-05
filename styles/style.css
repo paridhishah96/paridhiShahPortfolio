@@ -641,6 +641,15 @@ main .srNumber {
 .projects ul .projectBox .contentContainer .description {
   padding: 0 0 1rem;
 }
+.projects ul .projectBox .contentContainer .description .projectPartners {
+  border-bottom: 1px solid #ccd6f6;
+  -webkit-transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.projects ul .projectBox .contentContainer .description .projectPartners:hover, .projects ul .projectBox .contentContainer .description .projectPartners:focus {
+  border-bottom: 1px solid #64ffda;
+  color: #64ffda;
+}
 .projects ul .projectBox .contentContainer .madeWith {
   padding: 0 0 0.25rem;
 }

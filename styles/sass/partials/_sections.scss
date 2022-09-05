@@ -126,6 +126,14 @@ main {
                 }
                 .description {
                     padding: 0 0 1rem;
+                    .projectPartners {
+                        border-bottom: 1px solid $slate;
+                        transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+                        &:hover, &:focus {
+                            border-bottom: 1px solid $accentThree;
+                            color: $accentThree;
+                        }
+                    }
                 }
 
                 .madeWith{
