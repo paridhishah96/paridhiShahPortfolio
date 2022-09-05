@@ -10,13 +10,13 @@ img {
 }
 
 html {
-  scroll-behavior: smooth;
+ overflow-x: hidden; 
 }
 
 body {
   height: 100vh;
   background: linear-gradient(90deg,$primary,$accentTwo,$primary);
-
+  scroll-behavior: smooth;
 }
 
 
@@ -35,7 +35,7 @@ button {
 // to skip to main content for those who are using keyboards and don't have to scroll through the header - on all pages
 .skip-link {
     position: absolute;
-    left: -1000px;
+    left: -100%;
     top: 5px;
     z-index: 999;
     background: white;

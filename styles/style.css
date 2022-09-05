@@ -303,13 +303,14 @@ img {
 }
 
 html {
-  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   height: 100vh;
   background: -webkit-gradient(linear, left top, right top, from(#0a192f), color-stop(#233554), to(#0a192f));
   background: linear-gradient(90deg, #0a192f, #233554, #0a192f);
+  scroll-behavior: smooth;
 }
 
 button {
@@ -327,7 +328,7 @@ button:hover, button:focus {
 
 .skip-link {
   position: absolute;
-  left: -1000px;
+  left: -100%;
   top: 5px;
   z-index: 999;
   background: white;
