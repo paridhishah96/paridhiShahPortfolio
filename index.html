@@ -16,17 +16,17 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
 
-    <!-- animation on scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" 
     
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,700&family=Syne&display=swap" rel="stylesheet"> 
-
+    
     <!-- SASS/CSS style sheet -->
     <link rel="stylesheet" href="./styles/style.css">
-    </head>
+    <!-- animation on scroll -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"  -->
+</head>
 <body id="home">
     <!-- Skip Link -->
     <a href="#mainContent" class="skip-link">Skip to main content.</a>
@@ -95,10 +95,10 @@
     <main id="mainContent">
         <section class="about " id="about"> 
             <div class="wrapper">
-                <div  class="imgContainer" data-aos="fade-right">
+                <div  class="imgContainer">
                     <img src="./assets/aboutImage.jpg" alt="Paridhi (my) picture sitting in front of a music wallpaper">
                 </div>
-                <div class="aboutInfo " data-aos="fade-left">
+                <div class="aboutInfo ">
                     <h2><span class="srNumber">02.</span>about me</h2>
                     <p>I am a Front-End Developer with a passion to build engaging, accessible and responsive apps & websites. Previously I worked in customer service, where I developed strong <span>problem solving</span>, <span>logical thinking</span>  and <span>communication skills</span>. </p>
                     <p>I carry my fascination for technology into my mindset for coding. My goal is to never stop learning and to continue growing as a person and a dedicated team member.</p>
@@ -133,7 +133,7 @@
                     <h2><span class="srNumber">03.</span>skills</h2>
                     <p>my current tech stack</p>
                 </div>
-                <div class="skillList" id="skillList" data-aos="zoom-in">
+                <div class="skillList" id="skillList">
                     <ul id="skillsUl">
                         <!-- skill list gets appended using JS  -->
                     </ul>
@@ -178,7 +178,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="projectBox" data-aos="slide-up">
+                        <li class="projectBox">
                             <div class="imgContainer">
                                 <img src="./assets/projectThreeMockup.png" alt="A showcase of what my project using React and React Routing looks like" class="markup">
                                 </div>
@@ -201,7 +201,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="projectBox " data-aos="slide-up">
+                        <li class="projectBox">
                             <div class="imgContainer">
                                 <img src="./assets/projectTwoMockup.png" alt="A showcase of
                                 what my JavaScript project looks like on a laptop screen and a phone screen" class="markup">
@@ -215,7 +215,6 @@
                                     <ul>
                                         <li>JavaScript</li>
                                         <li>SASS</li>
-                                    </div>
                                         <li>HTML5</li> 
                                         <li>Git Branching</li>
                                         <li>Paired Programming</li>
@@ -226,7 +225,7 @@
                                     <a target="_blank" href="https://github.com/recipeGeneratorNickParidhi/recipeGenerator" class="gitLink">GitHub Repo</a>
                             </div>
                         </li>
-                        <li class="projectBox" data-aos="slide-up">
+                        <li class="projectBox">
                             <div class="imgContainer">
                                 <img src="./assets/projectOneMockup.png" alt="A showcase of
                                  what my PSD project looks like on a laptop screen and a phone screen" class="markup">
@@ -319,8 +318,8 @@
             </div>
                    
         </div>
-        </footer>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </footer>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     <script src="./scripts.js/main.js" type="module"></script>
 </body>
 </html>
