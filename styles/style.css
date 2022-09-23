@@ -395,7 +395,6 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  right: 30%;
 }
 header::before {
   position: absolute;
