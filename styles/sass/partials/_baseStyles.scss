@@ -10,10 +10,11 @@ img {
 }
 
 html {
- overflow-x: hidden; 
+  overflow-x: hidden; 
 }
 
 body {
+  overflow-x: hidden; 
   height: 100vh;
   background: linear-gradient(90deg,$primary,$accentTwo,$primary);
   scroll-behavior: smooth;

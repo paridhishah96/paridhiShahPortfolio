@@ -8,7 +8,6 @@ const hamburgerMenu = () => {
     })
     
     navEl.addEventListener("click", (e) => {
-        console.log(e.target)
         if (e.target.id === "slideOutNav"){
             return
         } else {
