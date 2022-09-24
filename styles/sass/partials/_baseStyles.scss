@@ -9,9 +9,11 @@ img {
     margin: 0 auto;
 }
 
-body {
+html {
   scroll-behavior: smooth;
-  // overflow-x: hidden;
+}
+
+body {
   height: 100vh;
   background: linear-gradient(90deg,$primary,$accentTwo,$primary);
 }

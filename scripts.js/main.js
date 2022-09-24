@@ -14,7 +14,7 @@ function init() {
     // event listener that shows either success or error upon form submission
     form.addEventListener("submit", handleSubmit);
 
-    // some fun console.logs easter eggs!
+    // some fun console.logs as easter eggs!
     console.log("Hello hello hello");
     console.log("I see you've made your way to the console!");
     console.log("Don't worry, I made sure to clear it 😉");

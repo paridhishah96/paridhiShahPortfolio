@@ -25,7 +25,7 @@
     <!-- SASS/CSS style sheet -->
     <link rel="stylesheet" href="./styles/style.css">
     <!-- animation on scroll -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" 
 </head>
 <body id="home">
     <!-- Skip Link -->
@@ -95,10 +95,10 @@
     <main id="mainContent">
         <section class="about " id="about"> 
             <div class="wrapper">
-                <div  class="imgContainer">
+                <div  class="imgContainer" data-aos="flip-up">
                     <img src="./assets/aboutImage.jpg" alt="Paridhi (my) picture sitting in front of a music wallpaper">
                 </div>
-                <div class="aboutInfo ">
+                <div class="aboutInfo" data-aos="fade-in">
                     <h2><span class="srNumber">02.</span>about me</h2>
                     <p>I am a Front-End Developer with a passion to build engaging, accessible and responsive apps & websites. Previously I worked in customer service, where I developed strong <span>problem solving</span>, <span>logical thinking</span>  and <span>communication skills</span>. </p>
                     <p>I carry my fascination for technology into my mindset for coding. My goal is to never stop learning and to continue growing as a person and a dedicated team member.</p>
@@ -134,7 +134,7 @@
                     <p>my current tech stack</p>
                 </div>
                 <div class="skillList" id="skillList">
-                    <ul id="skillsUl">
+                    <ul id="skillsUl" data-aos="zoom-in-up">
                         <!-- skill list gets appended using JS  -->
                     </ul>
                 </div>
@@ -149,7 +149,7 @@
                 </div>
                 <div class="projectList">
                     <ul>
-                        <li class="projectBox">
+                        <li class="projectBox" data-aos="fade-up" data-aos-duration="800">
                             <div class="imgContainer">
                                 <img src="./assets/projectFourMockup.png" alt="A showcase of what my group project using React and React Routing looks like" class="markup">
                                 </div>
@@ -178,7 +178,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="projectBox">
+                        <li class="projectBox" data-aos="fade-up" data-aos-duration="800">
                             <div class="imgContainer">
                                 <img src="./assets/projectThreeMockup.png" alt="A showcase of what my project using React and React Routing looks like" class="markup">
                                 </div>
@@ -201,7 +201,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="projectBox">
+                        <li class="projectBox" data-aos="fade-up" data-aos-duration="800">
                             <div class="imgContainer">
                                 <img src="./assets/projectTwoMockup.png" alt="A showcase of
                                 what my JavaScript project looks like on a laptop screen and a phone screen" class="markup">
@@ -225,7 +225,7 @@
                                     <a target="_blank" href="https://github.com/recipeGeneratorNickParidhi/recipeGenerator" class="gitLink">GitHub Repo</a>
                             </div>
                         </li>
-                        <li class="projectBox">
+                        <li class="projectBox" data-aos="fade-up" data-aos-duration="800">
                             <div class="imgContainer">
                                 <img src="./assets/projectOneMockup.png" alt="A showcase of
                                  what my PSD project looks like on a laptop screen and a phone screen" class="markup">
@@ -319,7 +319,7 @@
                    
         </div>
     </footer>
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./scripts.js/main.js" type="module"></script>
 </body>
 </html>
